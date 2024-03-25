@@ -1,0 +1,348 @@
+/* fonts components */
+@font-face {
+  font-family: "RalewayRegular";
+  src: url(font/Raleway/Raleway-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DelaGothicOne";
+  src: url(font/DelaGothicOne-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+/* end fonts components */
+/* general styles*/
+h1, h2, h3 {
+  font-family: "DelaGothicOne";
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 64px;
+  color: white;
+  max-width: 715px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  padding: 0em 5em 0em 5em;
+  font-family: "RalewayRegular";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input[type=button] {
+  background-color: #DA1F39;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "RalewayRegular";
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  height: 50px;
+  width: 225px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  border: 1px solid #DA1F39;
+  color: #DA1F39;
+  background-color: white;
+  transition: all 0.2s ease-in;
+}
+
+.white_letter {
+  color: white;
+}
+
+/* end general styles*/
+/* header styles*/
+.laptop_header {
+  margin: 1.6em 0em 1.6em 0em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.laptop_header .menu_header {
+  padding-left: 0px;
+}
+.laptop_header ul {
+  display: flex;
+  padding-inline-start: 0px;
+}
+.laptop_header ul li {
+  padding-right: 1.875em;
+}
+.laptop_header ul li :hover {
+  opacity: 70%;
+  transition: all 0.2s ease-in;
+}
+.laptop_header ul .chosen_menu a {
+  color: #DA1F39;
+  font-weight: bold;
+}
+.laptop_header .etnodim_logo_header {
+  max-width: 184px;
+}
+.laptop_header .information_header select {
+  text-transform: uppercase;
+  font-family: "RalewayRegular";
+  border: none;
+  font-size: 16px;
+}
+.laptop_header .information_header img {
+  max-width: 25px;
+}
+.laptop_header .information_header .cart {
+  padding-right: 0px;
+}
+
+/* end header styles*/
+/* main_screen section styles */
+.main_screen {
+  position: relative;
+}
+.main_screen .main_screen_background {
+  background: url(src/images/general/DSC_8575\ 1.jpg);
+  background-size: cover;
+  height: 47em;
+  display: flex;
+  align-items: center;
+}
+.main_screen .main_screen_information {
+  margin-left: 5.5em;
+}
+.main_screen .main_screen_information p {
+  color: white;
+  margin-top: 0.625em;
+}
+.main_screen .main_screen_information .main_button {
+  margin-top: 3.125em;
+}
+.main_screen .scroll_down {
+  position: absolute;
+  right: 50%;
+  bottom: -46px;
+}
+.main_screen .scroll_down .scroll_down_icon {
+  height: 63px;
+  width: 57px;
+}
+
+/* end main_screen section styles */
+/* second_banner section styles */
+.second_banner {
+  padding-top: 8.125em;
+  padding-bottom: 8.125em;
+}
+.second_banner .second_main_block {
+  position: relative;
+  width: 53em;
+  margin: auto;
+}
+.second_banner .second_main_block .images_background {
+  position: relative;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 50% 50%;
+}
+.second_banner .second_main_block .images_background img {
+  height: 260px;
+  width: 209px;
+}
+.second_banner .second_main_block .images_background .right_image {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  justify-content: end;
+}
+.second_banner .second_main_block .second_banner_text {
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  text-align: center;
+}
+
+/* end second_banner section styles */
+/* block_slider section styles */
+.block_slider .main_block {
+  margin-bottom: 128px;
+}
+.block_slider .main_block .up_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5em;
+}
+.block_slider .main_block .up_block .arrows_slider {
+  display: flex;
+}
+.block_slider .main_block .up_block .arrows_slider .left_arrow {
+  padding-right: 1.25em;
+}
+.block_slider .main_block .slider {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+.block_slider .main_block .slider .card_new_searching {
+  max-width: 19.8em;
+  padding-right: 3.125em;
+}
+.block_slider .main_block .slider .card_new_searching :hover {
+  cursor: pointer;
+}
+.block_slider .main_block .slider .card_new_searching .image :hover {
+  border: 1px solid black;
+  outline: 10px solid white;
+  outline-offset: -11px;
+}
+.block_slider .main_block .slider .card_new_searching .image .photo_products {
+  width: 19.8em;
+  height: 25em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.block_slider .main_block .slider .card_new_searching .name_products {
+  padding-top: 0.625em;
+}
+.block_slider .main_block .slider .card_new_searching .name_products p {
+  font-size: 14px;
+}
+.block_slider .main_block .slider .card_new_searching .price_products {
+  padding-top: 0.625em;
+}
+.block_slider .main_block .slider .card_new_searching .price_products span {
+  font-weight: 700;
+}
+
+/* end block_slider section styles */
+/* fourth_screen section styles */
+.fourth_screen .background {
+  background: url(src/images/general/Rectangle\ 49\ \(1\).png);
+  background-size: cover;
+}
+.fourth_screen .background .main_block {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  height: 47em;
+}
+.fourth_screen .background .main_block .text_part {
+  margin-top: 50px;
+  margin-left: 80px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fourth_screen .background .main_block .text_part .name_company {
+  text-transform: uppercase;
+  color: #939694;
+}
+.fourth_screen .background .main_block .text_part h2, .fourth_screen .background .main_block .text_part p {
+  text-align: center;
+}
+.fourth_screen .background .main_block .text_part h2 {
+  padding-bottom: 1.25em;
+}
+.fourth_screen .background .main_block .text_part p {
+  padding-bottom: 3.125em;
+  line-height: 1.875em;
+  max-width: 26.19em;
+}
+.fourth_screen .background .main_block .image_part {
+  width: 100%;
+  background: url(src/images/general/image\ 22.png);
+  background-size: cover;
+}
+
+/* end fourth_screen section styles */
+/* footer styles */
+footer {
+  background-color: #F4F4F4;
+  margin-top: 130px;
+  position: relative;
+  margin: 5em -5em 0em -5em;
+}
+footer .main_information {
+  padding: 4.375em 5em 4.375em 5em;
+}
+footer .main_information .logo_footer {
+  display: flex;
+  justify-content: center;
+}
+footer .main_information .logo_footer .etnodim_logo_footer {
+  padding-bottom: 40px;
+  max-width: 184px;
+}
+footer .main_information .bottom_information_footer {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+}
+footer .main_information .bottom_information_footer .footer_menu {
+  display: grid;
+}
+footer .main_information .bottom_information_footer .header {
+  text-decoration: underline;
+}
+footer .main_information .bottom_information_footer .drabyna, footer .main_information .bottom_information_footer .manifest {
+  padding-top: 30px;
+}
+footer .main_information .bottom_information_footer .footer_menu {
+  grid-template-columns: 30% 50%;
+}
+footer .main_information .bottom_information_footer .footer_menu .left_menu_footer, footer .main_information .bottom_information_footer .footer_menu .right_menu_footer {
+  display: grid;
+  gap: 10px;
+}
+footer .main_information .bottom_information_footer .footer_menu .left_menu_footer .drabyna, footer .main_information .bottom_information_footer .footer_menu .left_menu_footer .manifest, footer .main_information .bottom_information_footer .footer_menu .right_menu_footer .drabyna, footer .main_information .bottom_information_footer .footer_menu .right_menu_footer .manifest {
+  color: #DA1F39;
+  font-weight: 700;
+}
+footer .main_information .bottom_information_footer .contacts_footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .main_information .bottom_information_footer .contacts_footer span {
+  padding-bottom: 10px;
+}
+footer .main_information .bottom_information_footer .contacts_footer .grafic .pn_pt {
+  padding-right: 20px;
+}
+footer .main_information .bottom_information_footer .social_networking .icon_social_networking {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+footer .main_information .bottom_information_footer .social_networking .icon_social_networking svg {
+  padding-right: 20px;
+}
+footer .main_information .bottom_information_footer .social_networking .rights {
+  padding-top: 100px;
+}
+footer .arrow_up {
+  position: absolute;
+  right: 50%;
+  top: -28px;
+}
+
+/* end footer styles */
+/* responsive*/
+@media screen and (min-width: 1990px) {
+  .laptop_mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,372 @@
+$icon_size_width: 25px;
+$hover: 70%;
+$main_color: #DA1F39;
+$additional_color: #939694;
+$additional_color_two: #F4F4F4;
+$main_font:"RalewayRegular";
+$header_font:"DelaGothicOne";
+$transition: all 0.2s ease-in; 
+
+
+/* fonts components */
+@font-face {
+    font-family: "RalewayRegular";
+    src: url(font/Raleway/Raleway-Regular.ttf) format("truetype");
+    font-style: normal; 
+    font-weight: 400;
+}
+@font-face {
+    font-family: "DelaGothicOne";
+    src: url(font/DelaGothicOne-Regular.ttf) format("truetype");
+    font-style: normal; 
+    font-weight: 400;
+}
+/* end fonts components */
+
+/* general styles*/
+h1, h2, h3{
+    font-family: "DelaGothicOne";
+    text-transform: uppercase;
+}
+h1{
+    font-size: 64px;
+    color: white;
+    max-width: 715px;
+}
+h2{
+    font-size: 36px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body {
+  padding: 0em 5em 0em 5em;
+  font-family: $main_font;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input[type=button]{
+    background-color: $main_color;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: $main_font;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    height: 50px;
+    width: 225px;
+    cursor: pointer;
+}
+input[type=button]:hover{
+        border: 1px solid $main_color;
+        color: $main_color;
+        background-color: white;
+        transition: $transition; 
+}
+.white_letter{
+    color: white;
+}
+/* end general styles*/
+
+/* header styles*/
+.laptop_header{
+    margin: 1.6em 0em 1.6em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu_header{
+        padding-left: 0px;
+    }
+    ul{
+        display: flex;
+        padding-inline-start: 0px;
+        li{
+            padding-right: 1.875em;
+            :hover{
+                opacity: $hover;
+                transition: $transition;  
+            }
+        }
+        .chosen_menu a{
+            color: $main_color;
+            font-weight: bold;
+        }
+    }
+    .etnodim_logo_header{
+        max-width: 184px;
+    }
+    .information_header{
+        select{
+            text-transform: uppercase;
+            font-family: $main_font;
+            border: none;
+            font-size: 16px;
+        }
+        img{
+            max-width: $icon_size_width;
+        }
+        .cart{
+            padding-right: 0px;
+        }
+
+    }
+}
+/* end header styles*/
+
+/* main_screen section styles */
+.main_screen{
+    position: relative;
+    .main_screen_background{
+        background: url(src/images/general/DSC_8575\ 1.jpg);
+        background-size: cover;
+        height: 47em;
+        display: flex;
+        align-items: center;
+    }
+    .main_screen_information{
+        margin-left: 5.5em;
+        p{
+            color: white;
+            margin-top: 0.625em;
+        }
+        .main_button{
+            margin-top: 3.125em;
+        }
+    }
+    .scroll_down{
+        position: absolute;
+        right: 50%;
+        bottom: -46px;
+        .scroll_down_icon{
+            height: 63px;
+            width: 57px;
+        }
+    }
+}
+/* end main_screen section styles */
+
+/* second_banner section styles */
+.second_banner{
+    padding-top: 8.125em;
+    padding-bottom: 8.125em;
+    .second_main_block{
+        position: relative;
+        width: 53em;
+        margin: auto;
+        .images_background{
+            position: relative;
+            display: grid;
+            grid-template-rows: 25% 25% 25% 25%;
+            grid-template-columns: 50% 50%;
+                img{
+                    height: 260px;
+                    width: 209px;
+                }
+                .right_image{
+                   display: grid;
+                   grid-column-start: 2;
+                   grid-row-start: 3;
+                   justify-content: end;
+                }
+            }
+            .second_banner_text{
+                position: absolute;
+                top: 38%;
+                z-index: 1;
+                text-align: center;
+            }  
+        }
+    }
+/* end second_banner section styles */
+
+/* block_slider section styles */
+.block_slider{
+    .main_block{
+        margin-bottom: 128px;
+        .up_block{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2.5em;
+            .arrows_slider{
+                display: flex;
+                .left_arrow{
+                    padding-right: 1.25em;
+                }
+            }
+        }
+        .slider{
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            flex-wrap: nowrap;
+            .card_new_searching{
+                max-width: 19.8em;
+                padding-right: 3.125em;
+                :hover{
+                    cursor: pointer;
+                } 
+                .image{
+                    :hover{
+                        border: 1px solid black;
+                        outline: 10px solid white;
+                        outline-offset: -11px;
+                    } 
+                    .photo_products{
+                        width: 19.8em;
+                        height: 25em;
+                        object-fit: cover;
+                    }
+                }
+                .name_products{
+                    padding-top: 0.625em;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                .price_products{
+                    padding-top: 0.625em;
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end block_slider section styles */
+
+/* fourth_screen section styles */
+.fourth_screen{
+    .background{
+        background: url(src/images/general/Rectangle\ 49\ \(1\).png);
+        background-size: cover;
+        .main_block{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-items: center;
+            height: 47em;
+
+
+            .text_part{
+                margin-top: 50px;
+                margin-left: 80px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .name_company{
+                    text-transform: uppercase;
+                    color: $additional_color;
+                }
+                h2, p{
+                    text-align: center;
+                }
+                h2{
+                    
+                    padding-bottom: 1.25em;
+                }
+                p{
+                    padding-bottom: 3.125em;
+                    line-height: 1.875em;
+                    max-width: 26.19em;
+                }
+            }
+            .image_part{
+                width: 100%;
+                background: url(src/images/general/image\ 22.png);
+                background-size: cover;
+                }
+            }
+        }
+    }
+
+/* end fourth_screen section styles */
+
+/* footer styles */
+footer{
+    background-color: $additional_color_two;
+    margin-top: 130px;
+    position: relative;
+    margin: 5em -5em 0em -5em;
+        .main_information{
+        padding: 4.375em 5em 4.375em 5em;
+        .logo_footer{
+            display: flex;
+            justify-content: center;
+            .etnodim_logo_footer{
+                padding-bottom: 40px;
+                max-width: 184px;
+            }
+        }
+        .bottom_information_footer{
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            .footer_menu{
+                display: grid;
+            }
+            .header{
+                text-decoration: underline;
+            }
+            .drabyna, .manifest{
+                padding-top:  30px;
+            }
+            .footer_menu{
+                grid-template-columns: 30% 50%;
+                .left_menu_footer, .right_menu_footer{
+                    display: grid;
+                    gap: 10px;
+                    .drabyna, .manifest{
+                        color: $main_color;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .contacts_footer{
+                display: flex;
+                flex-direction: column;
+                span{
+                    padding-bottom: 10px;
+                }
+                .grafic{
+                    .pn_pt{
+                        padding-right: 20px;
+                    }
+                }
+            }
+            .social_networking{
+                .icon_social_networking{
+                    display: flex;
+                    align-items: center;
+                    padding-top: 10px;
+                    padding-bottom: 70px;
+
+                    svg{
+                        padding-right: 20px;
+                        
+                    }
+                }
+                .rights{
+                    padding-top: 100px;
+                }
+            }
+        }
+    }
+    .arrow_up{
+        position: absolute;
+        right: 50%;
+        top: -28px;
+    }
+}
+/* end footer styles */
+
+/* responsive*/
+@media screen and (min-width:1990px){
+    .laptop_mobile{
+        display: none;
+    }
+    
+}
