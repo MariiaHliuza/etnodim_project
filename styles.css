@@ -223,7 +223,7 @@ input[type=button]:hover {
 .slider-general-block-card-fit__image:hover {
   width: 15.8em;
   height: 21em;
-  transition: all ease 0.1s;
+  transition: all 0.5s;
 }
 .slider-general-block-card-description {
   padding-top: 0.625em;
