@@ -7,187 +7,178 @@
     <link rel="stylesheet" href="normilize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="src/images/general/favicon.png">
-
 </head>
 <body>
-    <!-- header for laptop -->
-    <header class="laptop_header">
+    <!-- laptop-header -->
+    <header class="laptop-header">
         <nav>
-            <div class="menu_header">
-                <ul>
-                    <li class="chosen_menu"><a href="#">Каталог</a></li>
-                    <li><a href="#">Знижки</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li><a href="#">Про нас</a></li>
-                </ul>
-        </nav>
-            <div class="logo_header">
-                <img class="etnodim_logo_header" src="src/images/general/etnodim-logo-main-removebg-preview 1 (1).png" alt="etnodim logo">
+            <div class="laptop-header-menu">
+                <a href="#" class="laptop-header-menu__nav_red">Каталог</a>
+                <a href="#" class="laptop-header-menu__nav">Знижки</a>
+                <a href="#" class="laptop-header-menu__nav">Блог</a>
+                <a href="#" class="laptop-header-menu__nav">Про нас</a>
             </div>
-            <div class="information_header">
-                <ul>
-                    <li class="language">
-                        <select name="language" id="ua" class="language_select">
-                            <option value="ua">ua</option>
-                            <option value="en">en</option>
-                            <option value="fr">fr</option>
-                            <option value="ge">ge</option>
-                        </select>
-                    </li>
-                    <li class="value">
-                        <select name="value" id="value_menu">
-                            <option value="hryvna">₴</option>
-                            <option value="dollar">$</option>
-
-                            <option value="euro">€</option>
-                        </select>
-                    </li>
-                        <li class="number">+38 097 888 92 92</li>
-                        <li class="searching">
-                            <img clas="searching_icon" src="src/images/general/icons/ei_search.png" alt="ei_search">
-                        </li>
-                        <li class="cart">
-                            <a href="">
-                                <img clas="cart_icon" src="src/images/general/icons/cart.png" alt="cart">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        </nav>
+            <div class="logo">
+                <img class="logo__image" src="src/images/general/etnodim-logo-main-removebg-preview 1 (1).png" alt="etnodim logo">
+            </div>
+            <div class="laptop-header-additional">
+                <select class="laptop-header-additional__language">
+                    <option id="ua" value="ua">ua</option>
+                    <option id="en" value="en">en</option>
+                    <option id="fr" value="fr">fr</option>
+                    <option id="ge" value="ge">ge</option>
+                </select>
+                <select class="laptop-header-additional__value">
+                    <option id="hryvna" value="hryvna">₴</option>
+                    <option id="dollar" value="dollar">$</option>
+                    <option id="euro" value="euro">€</option>
+                </select>
+                <a href="tel:+380978889292" class="laptop-header-additional__number">+38 097 888 92 92</a>
+                <a href="#"><img src="src/images/general/icons/ei_search.png" alt="ei_search" class="laptop-header-additional__icon-searching"></a>
+                <a href="#"><img src="src/images/general/icons/cart.png" alt="cart" class="laptop-header-additional__icon-cart"></a>
             </div>
     </header>
-    <!-- end header for laptop -->
+    <!-- end laptop-header -->
 
-    <!-- header for mobile -->
-    <header class="laptop_mobile">
+    <!-- mobile-header -->
+    <header class="mobile-header">
         <nav>
         </nav>
     </header>
-    <!-- end header for mobile -->
+    <!-- end mobile-header -->
 
-    <!-- main_screen -->
-    <section class="main_screen">
-        <div class="main_screen_background">
-            <div class="main_screen_information">
-                <div class="text_information">
-                    <h1>
+    <!-- main-screen -->
+    <section class="main-screen">
+        <div class="main-screen-background">
+            <div class="main-screen-block">
+                <div class="main-screen-block-information">
+                    <h1 class="main-screen-block-information__header">
                         більше ніж просто одяг
                     </h1>
-                    <p>
+                    <p class="main-screen-block-information__paragraph">
                         Нова літня колекція
                     </p>
                 </div>
-                <input type="button" class="main_button" value="дивитись колекцію" id="buttonsee">
+                <input type="button" class="main-screen-block--button" value="дивитись колекцію" id="buttonsee">
             </div>
         </div>
-        <div class="scroll_down">
-            <img class="scroll_down_icon" src="src/images/general/icons/scroll down.png" alt="scroll down">
-        </div>
+            <a href="#"><img class="main-screen__scroll" src="src/images/general/icons/scroll down.png" alt="scroll down"></a>
     </section>
     <!-- end main_screen -->
 
-    <!-- second_banner -->
-    <section class="second_banner">
-        <div class="second_main_block">
-            <div class="second_banner_text">
-                <h2>
-                    <span class="white_letter">e</span>tnodim - магазин дизайнерських вишив<span class="white_letter">анок</span> ручної роботи та етні<span class="white_letter">чного</span> одягу
+    <!-- banner-first -->
+    <section class="banner">
+        <div class="banner-text">
+            <div class="banner-text-block">
+                <h2 class="banner-text-block__header">
+                    <span class="banner-text-block__header--white">e</span>tnodim - магазин дизайнерських вишив<span class="banner-text-block__header--white">анок</span> ручної роботи та етні<span class="banner-text-block__header--white">чного</span> одягу
                 </h2>
             </div>
-            <div class="images_background">
-                <div class="left_image">
-                    <img class="image_second_screen" src="src/images/general/DSC_8642.png" alt="model clothes">
+            <div class="banner-image">
+                <div class="banner-image-left">
+                    <img class="banner-image-left__image" src="src/images/general/DSC_8642.png" alt="model clothes">
                 </div>
-                <div class="right_image">
-                    <img class="image_second_screen" src="src/images/general/image 33.png" alt="model clothes 2">
+                <div class="banner-image-right">
+                    <img class="banner-image-left__right" src="src/images/general/image 33.png" alt="model clothes 2">
                 </div>
             </div>
         </div>
     </section>
-    <!-- end second_banner -->
+    <!-- end banner-first -->
 
-    <!-- block_slider -->
-   <section class="block_slider">
-    <div class="main_block">
-        <div class="up_block">
-                <h2>нові надходження</h2>
-            <div class="arrows_slider">
-                <div class="left_arrow">
+    <!-- slider -->
+   <section class="slider">
+
+    <div class="slider-general">
+        <div class="slider-general-top">
+                <h2 class="slider-general-top__header">нові надходження</h2>
+            <div class="slider-general-top__arrow">
+                <div class="slider-general-top__arrow--left">
                     <svg width="52" height="8" viewBox="0 0 52 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.64637 4.35355C0.451107 4.15829 0.451107 3.84171 0.64637 3.64645L3.82835 0.464466C4.02361 0.269204 4.34019 0.269204 4.53546 0.464466C4.73072 0.659728 4.73072 0.976311 4.53546 1.17157L1.70703 4L4.53546 6.82843C4.73072 7.02369 4.73072 7.34027 4.53546 7.53553C4.34019 7.7308 4.02361 7.7308 3.82835 7.53553L0.64637 4.35355ZM51.0898 4.5L0.999924 4.5V3.5L51.0898 3.5V4.5Z" fill="#DA1F39"/>
                     </svg>
                 </div>
-                <div class="right_arrow">
+                <div class="slider-general-arrow--right">
                     <svg width="52" height="8" viewBox="0 0 52 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M51.3986 4.35355C51.5938 4.15829 51.5938 3.84171 51.3986 3.64645L48.2166 0.464466C48.0213 0.269204 47.7047 0.269204 47.5095 0.464466C47.3142 0.659728 47.3142 0.976311 47.5095 1.17157L50.3379 4L47.5095 6.82843C47.3142 7.02369 47.3142 7.34027 47.5095 7.53553C47.7047 7.7308 48.0213 7.7308 48.2166 7.53553L51.3986 4.35355ZM0.955078 4.5L51.045 4.5V3.5L0.955078 3.5V4.5Z" fill="#DA1F39"/>
                     </svg>
                 </div>
             </div>
         </div>
-        <div class="slider">
-            <div class="card_new_searching">
-                <div class="image">
-                    <img class="photo_products" src="src/images/photo1.png" alt="photo1">
+
+        <div class="slider-general-block">
+            <div class="slider-general-block-card">
+                <div class="slider-general-block-card-fit">
+                    <img class="slider-general-block-card-fit__image" src="src/images/photo1.png" alt="photo1">
                 </div>
-                <div class="name_products">
-                    <p>Набір для створення вишивки Home Tree Green</p>
+                <div class="slider-general-block-card-description">
+                    <p class="slider-general-block-card-description__paragraph">Набір для створення вишивки Home Tree Green</p>
                 </div>
-                <div class="price_products">
-                    <span class="numbers_price">2 120</span> <span class="value"> грн.</span>
-                </div>
-            </div>
-            <div class="card_new_searching">
-                <div class="image">
-                    <img class="photo_products" src="src/images/photo3.png" alt="photo3">
-                </div>
-                <div class="name_products">
-                    <p>Легка блузка вільного крою з орнаментом Indi</p>
-                </div>
-                <div class="price_products">
-                    <span class="numbers_price">3 800</span> <span class="value"> грн.</span>
+                <div class="slider-general-block-card-price">
+                    <span class="slider-general-block-card-price__number">2 120</span> <span class="slider-general-block-card-price__value"> грн.</span>
                 </div>
             </div>
-            <div class="card_new_searching">
-                <div class="image">
-                    <img class="photo_products" src="src/images/photo4.png" alt="photo4">
+
+            <div class="slider-general-block-card">
+                <div class="slider-general-block-card-fit">
+                    <img class="slider-general-block-card-fit__image" src="src/images/photo3.png" alt="photo3">
                 </div>
-                <div class="name_products">
-                    <p>Чоловіча лльна сорочка з вишивкою Sky</p>
+                <div class="slider-general-block-card-description">
+                    <p class="slider-general-block-card-description__paragraph">Легка блузка вільного крою з орнаментом Indi</p>
                 </div>
-                <div class="price_products">
-                    <span class="numbers_price">2 800</span> <span class="value"> грн.</span>
-                </div>
-            </div>
-            <div class="card_new_searching">
-                <div class="image">
-                    <img class="photo_products" src="src/images/photo3.png" alt="photo3">
-                </div>
-                <div class="name_products">
-                    <p>Легка блузка вільного крою з орнаментом Indi</p>
-                </div>
-                <div class="price_products">
-                    <span class="numbers_price">3 800</span> <span class="value"> грн.</span>
+                <div class="slider-general-block-card-price">
+                    <span class="slider-general-block-card-price__number">3 800</span> <span class="slider-general-block-card-price__value"> грн.</span>
                 </div>
             </div>
-            <div class="card_new_searching">
-                <div class="image">
-                    <img class="photo_products" src="src/images/photo1.png" alt="photo1">
+
+            <div class="slider-general-block-card">
+                <div class="slider-general-block-card-fit">
+                    <img class="slider-general-block-card-fit__image" src="src/images/photo4.png" alt="photo4">
                 </div>
-                <div class="name_products">
-                    <p>Набір для створення вишивки Home Tree Green</p>
+                <div class="slider-general-block-card-description">
+                    <p class="slider-general-block-card-description__paragraph">Чоловіча лльна сорочка з вишивкою Sky</p>
                 </div>
-                <div class="price_products">
-                    <span class="numbers_price">2 120</span> <span class="value"> грн.</span>
+                <div class="slider-general-block-card-price">
+                    <span class="slider-general-block-card-price__number">2 800</span> <span class="slider-general-block-card-price__value"> грн.</span>
                 </div>
             </div>
-            <div class="card_new_searching">
-                <div class="image">
-                    <img class="photo_products" src="src/images/photo1.png" alt="photo1">
+
+            <div class="slider-general-block">
+                <div class="slider-general-block-card">
+                    <div class="slider-general-block-card-fit">
+                        <img class="slider-general-block-card-fit__image" src="src/images/photo1.png" alt="photo1">
+                    </div>
+                    <div class="slider-general-block-card-description">
+                        <p class="slider-general-block-card-description__paragraph">Набір для створення вишивки Home Tree Green</p>
+                    </div>
+                    <div class="slider-general-block-card-price">
+                        <span class="slider-general-block-card-price__number">2 120</span> <span class="slider-general-block-card-price__value"> грн.</span>
+                    </div>
                 </div>
-                <div class="name_products">
-                    <p>Набір для створення вишивки Home Tree Green</p>
+    
+                <div class="slider-general-block-card">
+                    <div class="slider-general-block-card-fit">
+                        <img class="slider-general-block-card-fit__image" src="src/images/photo3.png" alt="photo3">
+                    </div>
+                    <div class="slider-general-block-card-description">
+                        <p class="slider-general-block-card-description__paragraph">Легка блузка вільного крою з орнаментом Indi</p>
+                    </div>
+                    <div class="slider-general-block-card-price">
+                        <span class="slider-general-block-card-price__number">3 800</span> <span class="slider-general-block-card-price__value"> грн.</span>
+                    </div>
                 </div>
-                <div class="price_products">
-                    <span class="numbers_price">2 120</span> <span class="value"> грн.</span>
+    
+                <div class="slider-general-block-card">
+                    <div class="slider-general-block-card-fit">
+                        <img class="slider-general-block-card-fit__image" src="src/images/photo4.png" alt="photo4">
+                    </div>
+                    <div class="slider-general-block-card-description">
+                        <p class="slider-general-block-card-description__paragraph">Чоловіча лльна сорочка з вишивкою Sky</p>
+                    </div>
+                    <div class="slider-general-block-card-price">
+                        <span class="slider-general-block-card-price__number">2 800</span> <span class="slider-general-block-card-price__value"> грн.</span>
+                    </div>
                 </div>
             </div>
         </div>

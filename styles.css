@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* fonts components */
 @font-face {
   font-family: "RalewayRegular";
@@ -32,6 +33,9 @@ a {
   text-decoration: none;
   color: black;
 }
+a:hover {
+  opacity: 70%;
+}
 
 body {
   padding: 0em 5em 0em 5em;
@@ -60,169 +64,176 @@ input[type=button]:hover {
   transition: all 0.2s ease-in;
 }
 
-.white_letter {
-  color: white;
-}
-
 /* end general styles*/
-/* header styles*/
-.laptop_header {
+/* laptop-header styles*/
+.laptop-header {
   margin: 1.6em 0em 1.6em 0em;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.laptop_header .menu_header {
-  padding-left: 0px;
-}
-.laptop_header ul {
+.laptop-header .laptop-header-menu {
   display: flex;
-  padding-inline-start: 0px;
 }
-.laptop_header ul li {
+.laptop-header .laptop-header-menu__nav, .laptop-header .laptop-header-menu__nav_red {
   padding-right: 1.875em;
 }
-.laptop_header ul li :hover {
-  opacity: 70%;
-  transition: all 0.2s ease-in;
-}
-.laptop_header ul .chosen_menu a {
+.laptop-header .laptop-header-menu__nav_red {
   color: #DA1F39;
   font-weight: bold;
 }
-.laptop_header .etnodim_logo_header {
-  max-width: 184px;
+.laptop-header .logo__image {
+  max-width: 11.5em;
 }
-.laptop_header .information_header select {
-  text-transform: uppercase;
+.laptop-header .laptop-header-additional {
+  display: flex;
+  align-items: center;
+}
+.laptop-header .laptop-header-additional__language, .laptop-header .laptop-header-additional__value, .laptop-header .laptop-header-additional__number, .laptop-header .laptop-header-additional__icon-searching {
+  margin-right: 1.25em;
+}
+.laptop-header .laptop-header-additional__language, .laptop-header .laptop-header-additional__value {
   font-family: "RalewayRegular";
-  border: none;
   font-size: 16px;
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  padding-right: 0.3125em;
 }
-.laptop_header .information_header img {
+.laptop-header .laptop-header-additional__language:hover, .laptop-header .laptop-header-additional__value:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+.laptop-header .laptop-header-additional img {
   max-width: 25px;
 }
-.laptop_header .information_header .cart {
-  padding-right: 0px;
-}
 
-/* end header styles*/
-/* main_screen section styles */
-.main_screen {
+/* end laptop-header styles*/
+/* main-screen styles */
+.main-screen {
   position: relative;
 }
-.main_screen .main_screen_background {
+.main-screen-background {
   background: url(src/images/general/DSC_8575\ 1.jpg);
   background-size: cover;
   height: 47em;
   display: flex;
   align-items: center;
 }
-.main_screen .main_screen_information {
+.main-screen .main-screen-block {
   margin-left: 5.5em;
 }
-.main_screen .main_screen_information p {
+.main-screen .main-screen-block-information__paragraph {
   color: white;
   margin-top: 0.625em;
 }
-.main_screen .main_screen_information .main_button {
+.main-screen .main-screen-block--button {
   margin-top: 3.125em;
 }
-.main_screen .scroll_down {
+.main-screen__scroll {
   position: absolute;
   right: 50%;
-  bottom: -46px;
-}
-.main_screen .scroll_down .scroll_down_icon {
+  bottom: -43px;
   height: 63px;
   width: 57px;
 }
 
-/* end main_screen section styles */
-/* second_banner section styles */
-.second_banner {
+/* end main-screen styles */
+/* banner-first styles */
+.banner {
   padding-top: 8.125em;
   padding-bottom: 8.125em;
 }
-.second_banner .second_main_block {
+.banner .banner-text {
   position: relative;
   width: 53em;
   margin: auto;
 }
-.second_banner .second_main_block .images_background {
+.banner .banner-text .banner-image {
   position: relative;
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
   grid-template-columns: 50% 50%;
 }
-.second_banner .second_main_block .images_background img {
+.banner .banner-text .banner-image img {
   height: 260px;
   width: 209px;
 }
-.second_banner .second_main_block .images_background .right_image {
+.banner .banner-text .banner-image-right {
   display: grid;
   grid-column-start: 2;
   grid-row-start: 3;
   justify-content: end;
 }
-.second_banner .second_main_block .second_banner_text {
+.banner .banner-text .banner-text-block {
   position: absolute;
   top: 38%;
   z-index: 1;
   text-align: center;
 }
+.banner .banner-text .banner-text-block__header--white {
+  color: white;
+}
 
-/* end second_banner section styles */
-/* block_slider section styles */
-.block_slider .main_block {
+/* end banner-first styles */
+/* slider styles */
+.slider-general {
   margin-bottom: 128px;
 }
-.block_slider .main_block .up_block {
+.slider-general-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2.5em;
 }
-.block_slider .main_block .up_block .arrows_slider {
+.slider-general-top__arrow {
   display: flex;
 }
-.block_slider .main_block .up_block .arrows_slider .left_arrow {
+.slider-general-top__arrow--left {
   padding-right: 1.25em;
 }
-.block_slider .main_block .slider {
+.slider-general-block {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   flex-wrap: nowrap;
 }
-.block_slider .main_block .slider .card_new_searching {
+.slider-general-block-card {
   max-width: 19.8em;
   padding-right: 3.125em;
 }
-.block_slider .main_block .slider .card_new_searching :hover {
+.slider-general-block-card :hover {
   cursor: pointer;
 }
-.block_slider .main_block .slider .card_new_searching .image :hover {
-  border: 1px solid black;
-  outline: 10px solid white;
-  outline-offset: -11px;
+.slider-general-block-card-fit {
+  width: 19.8em;
+  height: 25em;
+  background-image: url(src/images/general/фон.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.block_slider .main_block .slider .card_new_searching .image .photo_products {
+.slider-general-block-card-fit__image {
   width: 19.8em;
   height: 25em;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.block_slider .main_block .slider .card_new_searching .name_products {
+.slider-general-block-card-fit__image:hover {
+  width: 15.8em;
+  height: 21em;
+}
+.slider-general-block-card-description {
   padding-top: 0.625em;
 }
-.block_slider .main_block .slider .card_new_searching .name_products p {
+.slider-general-block-card-description__paragraph {
   font-size: 14px;
 }
-.block_slider .main_block .slider .card_new_searching .price_products {
+.slider-general-block-card-price {
   padding-top: 0.625em;
 }
-.block_slider .main_block .slider .card_new_searching .price_products span {
+.slider-general-block-card-price span {
   font-weight: 700;
 }
 
