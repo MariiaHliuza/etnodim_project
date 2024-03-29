@@ -8,12 +8,17 @@ $main_font:"RalewayRegular";
 $main_font_size: 16px;
 $main_font_weight: 400;
 $header_font:"DelaGothicOne";
-$transition: all 0.2s ease-in; 
+$transition: all 0.2s ease-in;
 
 @mixin font($font, $font_size, $font_weight){
     font-family: $font;
     font-size: $font_size;
     font-weight: $font_weight;
+}
+
+@mixin hover($opacity, $pointer){
+    opacity: $hover;
+    cursor: pointer;
 }
 
 /* fonts components */
@@ -47,8 +52,8 @@ h2{
 a{
     text-decoration: none;
     color: black;
-    &:hover{
-        opacity: $hover;
+    &:hover{ 
+        @include hover($hover, pointer);
     }
 }
 body {
@@ -110,8 +115,7 @@ input[type=button]:hover{
             text-transform: uppercase;
             padding-right: 0.3125em;
             &:hover{
-                opacity: $hover;
-                cursor: pointer;
+                @include hover($hover, pointer);
             }
         }
         img{
@@ -213,6 +217,7 @@ input[type=button]:hover{
             justify-content: space-between;
             overflow: hidden;
             flex-wrap: nowrap;
+            margin-right: -5em;
             &-card{
                 max-width: 19.8em;
                 padding-right: 3.125em;
@@ -320,7 +325,7 @@ footer{
         }
         .bottom_information_footer{
             display: grid;
-            grid-template-columns: 40% 30% 30%;
+            grid-template-columns: 40% 35% 25%;
             .footer_menu{
                 display: grid;
             }
@@ -362,7 +367,6 @@ footer{
 
                     svg{
                         padding-right: 20px;
-                        
                     }
                 }
                 .rights{
@@ -406,66 +410,137 @@ footer{
             }
         }
     }
-    
-    .catalog{
-        .catalog-upper{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .sorting{
+.catalog-main-block{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    .filter{
+        @include font($main_font, 14px, 600);
+    }
+    .catalog-general{
+        .catalog-general-section{
+            .catalog-upper{
                 display: flex;
                 align-items: center;
-                &-four{
-                    display: grid;
-                    grid-template-columns: 6px 6px;
-                    grid-template-rows: 6px 6px;
-                    gap: 2px;
-                    margin-right: 10px;
-                    &__square{
-                        content: '';
-                        width: 6px;
-                        height: 6px;
-                        background-color: $additional_color_three;
-                    }
-                }
-                &-nine, &-four{
-                    &:hover{
-                        opacity: $hover;
-                        cursor: pointer;
-                    }
-                }
-
-                &-nine{
-                    display: grid;
-                    grid-template-columns: 4px 4px 4px;
-                    grid-template-rows: 4px 4px 4px;
-                    gap: 1px;
-                    
-                    &__square{
-                        content: '';
-                        width: 4px;
-                        height: 4px;
-                        background-color: $additional_color;
-                        
-                    }
-    
-                }
-                &-for{
-                    margin-left: 13px;
-                    @include font($main_font, 12px, 300);
-                    &__option{
-                        border: none;
-                        @include font($main_font, 12p);
-                        &:hover{
-                            opacity: $hover;
-                            cursor: pointer;
+                justify-content: space-between;
+                margin-bottom: 2.81em;
+                .sorting{
+                    display: flex;
+                    align-items: center;
+                    &-four{
+                        display: grid;
+                        grid-template-columns: 6px 6px;
+                        grid-template-rows: 6px 6px;
+                        gap: 2px;
+                        margin-right: 10px;
+                        &__square{
+                            content: '';
+                            width: 6px;
+                            height: 6px;
+                            background-color: $additional_color_three;
                         }
+                    }
+                    &-nine, &-four{
+                        &:hover{
+                            @include hover($hover, pointer);
+                        }
+                        }
+                    &-nine{
+                        display: grid;
+                        grid-template-columns: 4px 4px 4px;
+                        grid-template-rows: 4px 4px 4px;
+                        gap: 1px;
+                        &__square{
+                            content: '';
+                            width: 4px;
+                            height: 4px;
+                            background-color: $additional_color;
+                        }
+                    }
+                    &-for{
+                        margin-left: 13px;
+                        @include font($main_font, 12px, 300);
+                        &__option{
+                            border: none;
+                            @include font($main_font, 12px, 300);
+                            padding-right: 0.3125em;
+                            &:hover{
+                                @include hover($hover, pointer);
+                            }
+                        }
+                    }
+                }
+            }
+            .catalog-main{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                &-card{
+                    width: 48%;
+                    height: 660px;
+                    padding-bottom: 3.125em;
+                    a {
+                        &:hover{
+                            opacity: 100%;
+                        }
+                    }
+                    &-content{
+                        width: 100%;
+                        height: 607px;
+                        background-image: url(src/images/general/фон.png);
+                        background-size: cover;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &__image{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            &:hover{
+                                width: 80%;
+                                height: 80%;
+                                transition: all .5s;
+                            }
+                        }
+                    }
+                    &-text{
+                        padding-top: 0.625em;
+                        @include font($main_font, 14px, 300);
+                        &__name{
+                            padding-bottom: 0.3125em;
+
+                        }
+                        &__price{
+                            font-weight: 700;
+                        }
+                    }
                 }
             }
         }
+        .catalog-buttom{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            justify-items: center;
+            @include font($main_font, 14px, 600);
+            &-more{
+                &__button{
+                    display: inline-flex;
+                    align-items: center;
+                    &--text{
+                        text-decoration: underline;
+                        padding-right: 0.5em;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            &-next{
+                display: flex;
+
+            }
+        }
     }
-    }
-    
+}
+
+
 
 /* end catalog-woman-embroidery styles */
 

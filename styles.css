@@ -35,6 +35,7 @@ a {
 }
 a:hover {
   opacity: 70%;
+  cursor: pointer;
 }
 
 body {
@@ -197,6 +198,7 @@ input[type=button]:hover {
   justify-content: space-between;
   overflow: hidden;
   flex-wrap: nowrap;
+  margin-right: -5em;
 }
 .slider-general-block-card {
   max-width: 19.8em;
@@ -301,7 +303,7 @@ footer .main_information .logo_footer .etnodim_logo_footer {
 }
 footer .main_information .bottom_information_footer {
   display: grid;
-  grid-template-columns: 40% 30% 30%;
+  grid-template-columns: 40% 35% 25%;
 }
 footer .main_information .bottom_information_footer .footer_menu {
   display: grid;
@@ -380,60 +382,135 @@ footer .arrow_up {
   font-weight: 300;
 }
 
-.catalog {
+.catalog-main-block {
   display: grid;
   grid-template-columns: 20% 80%;
 }
-.catalog .catalog-upper {
+.catalog-main-block .filter {
+  font-family: "RalewayRegular";
+  font-size: 14px;
+  font-weight: 600;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
+  margin-bottom: 2.81em;
 }
-.catalog .catalog-upper .sorting {
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting {
   display: flex;
   align-items: center;
 }
-.catalog .catalog-upper .sorting-four {
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-four {
   display: grid;
   grid-template-columns: 6px 6px;
   grid-template-rows: 6px 6px;
   gap: 2px;
   margin-right: 10px;
 }
-.catalog .catalog-upper .sorting-four__square {
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-four__square {
   content: "";
   width: 6px;
   height: 6px;
   background-color: #565656;
 }
-.catalog .catalog-upper .sorting-nine:hover, .catalog .catalog-upper .sorting-four:hover {
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-nine:hover, .catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-four:hover {
   opacity: 70%;
   cursor: pointer;
 }
-.catalog .catalog-upper .sorting-nine {
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-nine {
   display: grid;
   grid-template-columns: 4px 4px 4px;
   grid-template-rows: 4px 4px 4px;
   gap: 1px;
 }
-.catalog .catalog-upper .sorting-nine__square {
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-nine__square {
   content: "";
   width: 4px;
   height: 4px;
   background-color: #939694;
 }
-.catalog .catalog-upper .sorting-for {
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-for {
   margin-left: 13px;
   font-family: "RalewayRegular";
   font-size: 12px;
   font-weight: 300;
 }
-.catalog .catalog-upper .sorting-for__option {
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-for__option {
   border: none;
   font-family: "RalewayRegular";
   font-size: 12px;
   font-weight: 300;
   padding-right: 0.3125em;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-for__option:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-main-card {
+  width: 48%;
+  height: 660px;
+  padding-bottom: 3.125em;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-main-card a:hover {
+  opacity: 100%;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-content {
+  width: 100%;
+  height: 607px;
+  background-image: url(src/images/general/фон.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-content__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-content__image:hover {
+  width: 80%;
+  height: 80%;
+  transition: all 0.5s;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-text {
+  padding-top: 0.625em;
+  font-family: "RalewayRegular";
+  font-size: 14px;
+  font-weight: 300;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-text__name {
+  padding-bottom: 0.3125em;
+}
+.catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-text__price {
+  font-weight: 700;
+}
+.catalog-main-block .catalog-general .catalog-buttom {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  justify-items: center;
+  font-family: "RalewayRegular";
+  font-size: 14px;
+  font-weight: 600;
+}
+.catalog-main-block .catalog-general .catalog-buttom-more__button {
+  display: inline-flex;
+  align-items: center;
+}
+.catalog-main-block .catalog-general .catalog-buttom-more__button--text {
+  text-decoration: underline;
+  padding-right: 0.5em;
+  text-transform: uppercase;
+}
+.catalog-main-block .catalog-general .catalog-buttom-next {
+  display: flex;
 }
 
 /* end catalog-woman-embroidery styles */
