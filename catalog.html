@@ -9,58 +9,91 @@
     <link rel="icon" href="src/images/general/favicon.png">
 </head>
 <body>
-    <!-- header for laptop -->
-    <header class="laptop_header">
+    <!-- laptop-header -->
+    <header class="laptop-header">
         <nav>
-            <div class="menu_header">
-                <ul>
-                    <li class="chosen_menu"><a href="#">Каталог</a></li>
-                    <li><a href="#">Знижки</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li><a href="#">Про нас</a></li>
-                </ul>
-        </nav>
-            <div class="logo_header">
-                <img class="etnodim_logo_header" src="src/images/general/etnodim-logo-main-removebg-preview 1 (1).png" alt="etnodim logo">
+            <div class="laptop-header-menu">
+                <a href="#" class="laptop-header-menu__nav_red">Каталог</a>
+                <a href="#" class="laptop-header-menu__nav">Знижки</a>
+                <a href="#" class="laptop-header-menu__nav">Блог</a>
+                <a href="#" class="laptop-header-menu__nav">Про нас</a>
             </div>
-            <div class="information_header">
-                <ul>
-                    <li class="language">
-                        <select name="language" id="ua" class="language_select">
-                            <option value="ua">ua</option>
-                            <option value="en">en</option>
-                            <option value="fr">fr</option>
-                            <option value="ge">ge</option>
-                        </select>
-                    </li>
-                    <li class="value">
-                        <select name="value" id="value_menu">
-                            <option value="hryvna">₴</option>
-                            <option value="dollar">$</option>
+        </nav>
+            <div class="logo">
+                <img class="logo__image" src="src/images/general/etnodim-logo-main-removebg-preview 1 (1).png" alt="etnodim logo">
+            </div>
+            <div class="laptop-header-additional">
+                <select class="laptop-header-additional__language">
+                    <option id="ua" value="ua">ua</option>
+                    <option id="en" value="en">en</option>
+                    <option id="fr" value="fr">fr</option>
+                    <option id="ge" value="ge">ge</option>
+                </select>
+                <select class="laptop-header-additional__value">
+                    <option id="hryvna" value="hryvna">₴</option>
+                    <option id="dollar" value="dollar">$</option>
+                    <option id="euro" value="euro">€</option>
+                </select>
+                <a href="tel:+380978889292" class="laptop-header-additional__number">+38 097 888 92 92</a>
+                <a href="#"><img src="src/images/general/icons/ei_search.png" alt="ei_search" class="laptop-header-additional__icon-searching"></a>
+                <a href="#"><img src="src/images/general/icons/cart.png" alt="cart" class="laptop-header-additional__icon-cart"></a>
+            </div>
+    </header>
+    <!-- end laptop-header -->
 
-                            <option value="euro">€</option>
+    <!-- mobile-header -->
+    <header class="mobile-header">
+        <nav>
+        </nav>
+    </header>
+    <!-- end mobile-header -->
+
+    <!-- catalog-woman-embroidery -->
+    <nav class="catalog-navigation">
+        <a href="" class="catalog-navigation__text">Головна</a>
+        <a href="" class="catalog-navigation__text">Жінкам</a>
+        <a href="" class="catalog-navigation__text--current">Жіночі вишиванки</a>
+    </nav>
+    <main>
+        <section class="catalog">
+            <div class="catalog-upper">
+                <div class="sorting">
+                    <div class="sorting-four">
+                        <div class="sorting-four__square"></div>
+                        <div class="sorting-four__square"></div>
+                        <div class="sorting-four__square"></div>
+                        <div class="sorting-four__square"></div>
+                    </div>
+                    <div class="sorting-nine">
+                        <div class="sorting-nine__square"></div>
+                        <div class="sorting-nine__square"></div>
+                        <div class="sorting-nine__square"></div>
+                        <div class="sorting-nine__square"></div>
+                        <div class="sorting-nine__square"></div>
+                        <div class="sorting-nine__square"></div>
+                        <div class="sorting-nine__square"></div>
+                        <div class="sorting-nine__square"></div>
+                        <div class="sorting-nine__square"></div>
+                    </div>
+                    <div class="sorting-for">
+                        <span class="sorting-for__text">Сортувати за:</span>
+                        <select name="новинки" class="sorting-for__option">
+                            <option value="pop">популярністю</option>
+                            <option value="up">зростання</option>
+                            <option value="descending">спаданню</option>
                         </select>
-                    </li>
-                        <li class="number">+38 097 888 92 92</li>
-                        <li class="searching">
-                            <img clas="searching_icon" src="src/images/general/icons/ei_search.png" alt="ei_search">
-                        </li>
-                        <li class="cart">
-                            <a href="">
-                                <img clas="cart_icon" src="src/images/general/icons/cart.png" alt="cart">
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
+                    <h2 class="catalog-name__text">
+                        <a href="" class="catalog-name__link">Жіночі вишиванки</a>
+                    </h2>
+                
             </div>
-    </header>
-    <!-- end header for laptop -->
-
-    <!-- header for mobile -->
-    <header class="laptop_mobile">
-        <nav>
-        </nav>
-    </header>
-    <!-- end header for mobile -->
+        </section>
+    </main>
+    <aside class="filter">
+        <h2>dddd</h2>
+        <h3>dffff</h3>
+    </aside>
 </body>
 </html>

@@ -3,6 +3,7 @@ $hover: 70%;
 $main_color: #DA1F39;
 $additional_color: #939694;
 $additional_color_two: #F4F4F4;
+$additional_color_three: #565656;
 $main_font:"RalewayRegular";
 $main_font_size: 16px;
 $main_font_weight: 400;
@@ -377,6 +378,98 @@ footer{
     }
 }
 /* end footer styles */
+
+
+/* catalog styles */
+
+/* catalog-woman-embroidery styles */
+.catalog-navigation{
+    @include font($main_font, 12px, 600);
+    padding-top: 10px;
+    padding-bottom: 41px;
+    display: flex;
+    align-items: center;
+        &__text{
+            display: flex;
+            align-items: center;
+            &::after{
+                content: '';
+                display: block;
+                background-color: black;
+                width: 1.9em;
+                height: 0.043em;
+                margin-right: 0.4em;
+                margin-left: 0.4em;
+            }
+            &--current{
+                font-weight: 300;
+            }
+        }
+    }
+    
+    .catalog{
+        .catalog-upper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .sorting{
+                display: flex;
+                align-items: center;
+                &-four{
+                    display: grid;
+                    grid-template-columns: 6px 6px;
+                    grid-template-rows: 6px 6px;
+                    gap: 2px;
+                    margin-right: 10px;
+                    &__square{
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background-color: $additional_color_three;
+                    }
+                }
+                &-nine, &-four{
+                    &:hover{
+                        opacity: $hover;
+                        cursor: pointer;
+                    }
+                }
+
+                &-nine{
+                    display: grid;
+                    grid-template-columns: 4px 4px 4px;
+                    grid-template-rows: 4px 4px 4px;
+                    gap: 1px;
+                    
+                    &__square{
+                        content: '';
+                        width: 4px;
+                        height: 4px;
+                        background-color: $additional_color;
+                        
+                    }
+    
+                }
+                &-for{
+                    margin-left: 13px;
+                    @include font($main_font, 12px, 300);
+                    &__option{
+                        border: none;
+                        @include font($main_font, 12p);
+                        &:hover{
+                            opacity: $hover;
+                            cursor: pointer;
+                        }
+                }
+            }
+        }
+    }
+    }
+    
+
+/* end catalog-woman-embroidery styles */
+
+/* end styles */
 
 /* responsive*/
 @media screen and (min-width:1990px){

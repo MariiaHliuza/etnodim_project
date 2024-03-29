@@ -352,6 +352,92 @@ footer .arrow_up {
 }
 
 /* end footer styles */
+/* catalog styles */
+/* catalog-woman-embroidery styles */
+.catalog-navigation {
+  font-family: "RalewayRegular";
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 41px;
+  display: flex;
+  align-items: center;
+}
+.catalog-navigation__text {
+  display: flex;
+  align-items: center;
+}
+.catalog-navigation__text::after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 1.9em;
+  height: 0.043em;
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+}
+.catalog-navigation__text--current {
+  font-weight: 300;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.catalog .catalog-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalog .catalog-upper .sorting {
+  display: flex;
+  align-items: center;
+}
+.catalog .catalog-upper .sorting-four {
+  display: grid;
+  grid-template-columns: 6px 6px;
+  grid-template-rows: 6px 6px;
+  gap: 2px;
+  margin-right: 10px;
+}
+.catalog .catalog-upper .sorting-four__square {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #565656;
+}
+.catalog .catalog-upper .sorting-nine:hover, .catalog .catalog-upper .sorting-four:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+.catalog .catalog-upper .sorting-nine {
+  display: grid;
+  grid-template-columns: 4px 4px 4px;
+  grid-template-rows: 4px 4px 4px;
+  gap: 1px;
+}
+.catalog .catalog-upper .sorting-nine__square {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #939694;
+}
+.catalog .catalog-upper .sorting-for {
+  margin-left: 13px;
+  font-family: "RalewayRegular";
+  font-size: 12px;
+  font-weight: 300;
+}
+.catalog .catalog-upper .sorting-for__option {
+  border: none;
+  font-family: "RalewayRegular";
+  font-size: 12px;
+  font-weight: 300;
+  padding-right: 0.3125em;
+}
+
+/* end catalog-woman-embroidery styles */
+/* end styles */
 /* responsive*/
 @media screen and (min-width: 1990px) {
   .laptop_mobile {
