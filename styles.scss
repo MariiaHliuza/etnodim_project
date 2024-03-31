@@ -4,9 +4,9 @@ $main_color: #DA1F39;
 $additional_color: #939694;
 $additional_color_two: #F4F4F4;
 $additional_color_three: #565656;
-$main_font:"RalewayRegular";
+$main_font:"InterLight";
 $main_font_size: 16px;
-$main_font_weight: 400;
+$main_font_weight: 300;
 $header_font:"DelaGothicOne";
 $transition: all 0.2s ease-in;
 
@@ -23,8 +23,8 @@ $transition: all 0.2s ease-in;
 
 /* fonts components */
 @font-face {
-    font-family: "RalewayRegular";
-    src: url(font/Raleway/Raleway-Regular.ttf) format("truetype");
+    font-family: "InterLight";
+    src: url(font/inter/Inter-Light.ttf) format("truetype");
     font-style: normal;
     font-weight: 400;
 }
@@ -79,6 +79,50 @@ input[type=button]:hover{
         background-color: white;
         transition: $transition; 
 }
+
+/*drop-down button styles*/
+.filter-block__button{
+    background-color: white;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    font-family: $main_font;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    display: flex;
+    align-items: center;
+    &::after{
+        content: "";
+        background-image: url(src/images/general/icons/Vector\ 10.png);
+        display: block;
+        width: 8px;
+        height: 4px;
+        margin-left: 5px;
+    }
+}
+
+.filter-block__button--hide{
+    background-color: white;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    font-family: $main_font;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    display: flex;
+    align-items: center;
+    &::after{
+        content: "";
+        background-image: url(src/images/general/icons/Vector\ 10.png);
+        display: block;
+        width: 8px;
+        height: 4px;
+        margin-left: 5px;
+        transform: rotate(180deg);
+    }
+}
+/*end drop-down button styles*/
+
 /* end general styles*/
 
 /* laptop-header styles*/
@@ -410,12 +454,39 @@ footer{
             }
         }
     }
-.catalog-main-block{
+
+    .catalog-main-block{
     display: grid;
     grid-template-columns: 20% 80%;
     .filter{
-        @include font($main_font, 14px, 600);
+        font-size: 14px;
+        &-block{
+            padding-bottom: 1.25em;
+            &-list{
+                padding-top: 0.3em;
+                display: block;
+                &-option{
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 0.3em;
+                    &__checkbox{
+                        margin-left: 0px;
+                        padding-right: 0.3em;
+                    }
+                }
+            }
+        }
     }
+
+    // .filter{
+    //     @include font($main_font, 14px, $font_weight);
+    //     &-size{
+    //         &__button{
+    //             font-weight: 600;
+    //         }
+
+    //     }
+    // }
     .catalog-general{
         .catalog-general-section{
             .catalog-upper{
@@ -486,7 +557,7 @@ footer{
                     &-content{
                         width: 100%;
                         height: 607px;
-                        background-image: url(src/images/general/фон.png);
+                        background-image: url(src/images/general/pexels-morgan-victoria-5304966\ 2.png);
                         background-size: cover;
                         display: flex;
                         align-items: center;

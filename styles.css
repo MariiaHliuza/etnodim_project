@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* fonts components */
 @font-face {
-  font-family: "RalewayRegular";
-  src: url(font/Raleway/Raleway-Regular.ttf) format("truetype");
+  font-family: "InterLight";
+  src: url(font/inter/Inter-Light.ttf) format("truetype");
   font-style: normal;
   font-weight: 400;
 }
@@ -40,9 +40,9 @@ a:hover {
 
 body {
   padding: 0em 5em 0em 5em;
-  font-family: "RalewayRegular";
+  font-family: "InterLight";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 input[type=button] {
@@ -50,7 +50,7 @@ input[type=button] {
   border: none;
   color: white;
   text-transform: uppercase;
-  font-family: "RalewayRegular";
+  font-family: "InterLight";
   font-size: 14px;
   letter-spacing: 0.07em;
   height: 50px;
@@ -65,6 +65,49 @@ input[type=button]:hover {
   transition: all 0.2s ease-in;
 }
 
+/*drop-down button styles*/
+.filter-block__button {
+  background-color: white;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  font-family: "InterLight";
+  font-weight: 600;
+  padding-bottom: 0.3em;
+  display: flex;
+  align-items: center;
+}
+.filter-block__button::after {
+  content: "";
+  background-image: url(src/images/general/icons/Vector\ 10.png);
+  display: block;
+  width: 8px;
+  height: 4px;
+  margin-left: 5px;
+}
+
+.filter-block__button--hide {
+  background-color: white;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  font-family: "InterLight";
+  font-weight: 600;
+  padding-bottom: 0.3em;
+  display: flex;
+  align-items: center;
+}
+.filter-block__button--hide::after {
+  content: "";
+  background-image: url(src/images/general/icons/Vector\ 10.png);
+  display: block;
+  width: 8px;
+  height: 4px;
+  margin-left: 5px;
+  transform: rotate(180deg);
+}
+
+/*end drop-down button styles*/
 /* end general styles*/
 /* laptop-header styles*/
 .laptop-header {
@@ -94,9 +137,9 @@ input[type=button]:hover {
   margin-right: 1.25em;
 }
 .laptop-header .laptop-header-additional__language, .laptop-header .laptop-header-additional__value {
-  font-family: "RalewayRegular";
+  font-family: "InterLight";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   border: none;
   text-transform: uppercase;
   padding-right: 0.3125em;
@@ -357,7 +400,7 @@ footer .arrow_up {
 /* catalog styles */
 /* catalog-woman-embroidery styles */
 .catalog-navigation {
-  font-family: "RalewayRegular";
+  font-family: "InterLight";
   font-size: 12px;
   font-weight: 600;
   padding-top: 10px;
@@ -387,9 +430,23 @@ footer .arrow_up {
   grid-template-columns: 20% 80%;
 }
 .catalog-main-block .filter {
-  font-family: "RalewayRegular";
   font-size: 14px;
-  font-weight: 600;
+}
+.catalog-main-block .filter-block {
+  padding-bottom: 1.25em;
+}
+.catalog-main-block .filter-block-list {
+  padding-top: 0.3em;
+  display: block;
+}
+.catalog-main-block .filter-block-list-option {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.3em;
+}
+.catalog-main-block .filter-block-list-option__checkbox {
+  margin-left: 0px;
+  padding-right: 0.3em;
 }
 .catalog-main-block .catalog-general .catalog-general-section .catalog-upper {
   display: flex;
@@ -432,13 +489,13 @@ footer .arrow_up {
 }
 .catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-for {
   margin-left: 13px;
-  font-family: "RalewayRegular";
+  font-family: "InterLight";
   font-size: 12px;
   font-weight: 300;
 }
 .catalog-main-block .catalog-general .catalog-general-section .catalog-upper .sorting-for__option {
   border: none;
-  font-family: "RalewayRegular";
+  font-family: "InterLight";
   font-size: 12px;
   font-weight: 300;
   padding-right: 0.3125em;
@@ -463,7 +520,7 @@ footer .arrow_up {
 .catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-content {
   width: 100%;
   height: 607px;
-  background-image: url(src/images/general/фон.png);
+  background-image: url(src/images/general/pexels-morgan-victoria-5304966\ 2.png);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -482,7 +539,7 @@ footer .arrow_up {
 }
 .catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-text {
   padding-top: 0.625em;
-  font-family: "RalewayRegular";
+  font-family: "InterLight";
   font-size: 14px;
   font-weight: 300;
 }
@@ -496,7 +553,7 @@ footer .arrow_up {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   justify-items: center;
-  font-family: "RalewayRegular";
+  font-family: "InterLight";
   font-size: 14px;
   font-weight: 600;
 }

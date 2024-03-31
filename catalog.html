@@ -56,8 +56,131 @@
     </nav>
     <div class="catalog-main-block">
         <aside class="filter">
-            <h2>dddd</h2>
-            <h3>dffff</h3>
+            <div class="filter-block">
+                <button id="dropDownIdSize" class="filter-block__button">Розмір</button>
+                <div class="filter-block-list" id="DropDownListIdSize">
+                    <div class="filter-block-list-option">
+                        <input id="size-32" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="size-32">32 | XXS (53)</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="size-34" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="size-34">34 | XS (60)</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="size-36" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="size-36">36 | S (60)</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="size-38" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="size-38">38 | M (60)</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="size-40" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="size-40">40 | L (60)</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="size-42" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="size-42">42 | XL (58)</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="size-46" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="size-46">46 | XXL (13)</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="size-48" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="size-48">48 | XХXL (4)</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-block">
+                <button id="dropDownIdColor" class="filter-block__button">Колір</button>
+                <div class="filter-block-list" id="DropDownListIdColor">
+                    <div class="filter-block-list-option">
+                        <input id="color-white" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="color-white">білий</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="color-black" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="color-black">чорний</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="color-beige" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="color-beige">бежевий</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="color-haki" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="color-haki">хакі</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="color-blue" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="color-blue">синій</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-block">
+                <button id="dropDownIdSeason" class="filter-block__button">Сезон</button>
+                <div class="filter-block-list" id="DropDownListIdSeason" style="display: none;">
+                    <div class="filter-block-list-option">
+                        <input id="season-spring" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="season-spring">весна</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="season-summer" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="season-summer">літо</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="season-autumn" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="season-autumn">осінь</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="season-winter" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="season-winter">зима</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-block">
+                <button id="dropDownIdMaterial" class="filter-block__button">Тканина</button>
+                <div class="filter-block-list" id="DropDownListIdMaterial" style="display: none;">
+                    <div class="filter-block-list-option">
+                        <input id="material-cotton" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="material-cotton">бавовна</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="material-atlas" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="material-atlas">атлас</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="material-batist" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="material-batist">батист</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="material-linen" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="material-linen">лляна тканина</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-block">
+                <button id="dropDownIdSleeve" class="filter-block__button">Рукав</button>
+                <div class="filter-block-list" id="DropDownListIdSleeve" style="display: none;">
+                    <div class="filter-block-list-option">
+                        <input id="sleeve-cut" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="sleeve-cut">короткий</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="long-cut" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="long-cut">довгий</label>
+                    </div>
+                    <div class="filter-block-list-option">
+                        <input id="long-3_4" class="filter-block-list-option__checkbox" type="checkbox">
+                        <label class="filter-block-list__label" for="long-3_4">3/4</label>
+                    </div>
+                </div>
+            </div>
         </aside>
         <main class="catalog-general">
             <section class="catalog-general-section">
@@ -96,7 +219,7 @@
 
                 <div class="catalog-main">
                     <div class="catalog-main-card">
-                        <a href="">
+                        <a href="cardProduct.html">
                             <div class="catalog-main-card-content">
                                 <img class="catalog-main-card-content__image" src="src/images/catalog/catalog_item1.png" alt="item1">
                             </div>
@@ -204,6 +327,7 @@
         
                 </div>
                 <div class="catalog-buttom-next">
+                    <div></div>
                     <div class="catalog-buttom-next-content">
                     <a href="" class="catalog-buttom-next-content__number--active">1</a>
                     <a href="" class="catalog-buttom-next-content__number">2</a>
@@ -290,5 +414,45 @@
         </div>
     </footer>
     <!-- end footer -->
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // drop-down function
+        $(document).ready(function(){
+          $("#dropDownIdSize").click(function(){
+            $("#dropDownIdSize").toggleClass("filter-block__button--hide");
+            $("#DropDownListIdSize").slideToggle("slow");
+          });
+        });
+
+        $(document).ready(function(){
+          $("#dropDownIdColor").click(function(){
+            $("#dropDownIdColor").toggleClass("filter-block__button--hide");
+            $("#DropDownListIdColor").slideToggle("slow");
+          });
+        });
+
+        $(document).ready(function(){
+          $("#dropDownIdSeason").click(function(){
+            $("#dropDownIdSeason").toggleClass("filter-block__button--hide");
+            $("#DropDownListIdSeason").slideToggle("slow");
+          });
+        });
+
+        $(document).ready(function(){
+          $("#dropDownIdMaterial").click(function(){
+            $("#dropDownIdMaterial").toggleClass("filter-block__button--hide");
+            $("#DropDownListIdMaterial").slideToggle("slow");
+          });
+        });
+
+        $(document).ready(function(){
+          $("#dropDownIdSleeve").click(function(){
+            $("#dropDownIdSleeve").toggleClass("filter-block__button--hide");
+            $("#DropDownListIdSleeve").slideToggle("slow");
+          });
+        });
+        </script>
 </body>
 </html>
