@@ -29,6 +29,10 @@ h2 {
   font-size: 36px;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -264,11 +268,11 @@ input[type=button]:hover {
   height: 25em;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .slider-general-block-card-fit__image:hover {
   width: 15.8em;
   height: 21em;
-  transition: all 0.5s;
 }
 .slider-general-block-card-description {
   padding-top: 0.625em;
@@ -531,11 +535,11 @@ footer .arrow_up {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-content__image:hover {
   width: 80%;
   height: 80%;
-  transition: all 0.5s;
 }
 .catalog-main-block .catalog-general .catalog-general-section .catalog-main-card-text {
   padding-top: 0.625em;
@@ -571,6 +575,151 @@ footer .arrow_up {
 }
 
 /* end catalog-woman-embroidery styles */
+/* card-product styles */
+.product-card-general {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 14px;
+}
+.product-card-general-images {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: -5.8em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card-general-images-main {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.product-card-general-images-main__photo {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50em;
+  padding-bottom: 3%;
+  cursor: pointer;
+}
+.product-card-general-images-main__photo:hover {
+  outline: white solid 10px;
+}
+.product-card-general-images-additional {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-card-general-images-additional__photo {
+  width: 48%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 25.94em;
+  padding-bottom: 3%;
+}
+.product-card-general-main {
+  padding-right: 5.5em;
+}
+.product-card-general-main-info__namecompany {
+  text-transform: uppercase;
+  color: #939694;
+}
+.product-card-general-main-additional {
+  padding-top: 2.5em;
+}
+.product-card-general-main-additional-one-color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25em;
+}
+.product-card-general-main-additional-one-amount {
+  padding-left: 2.94em;
+}
+.product-card-general-main-additional-one-amount__button--decrease, .product-card-general-main-additional-one-amount__button--increase {
+  font-weight: 400;
+  font-size: 16px;
+  width: 1.3125em;
+  height: 1.3125em;
+  border: none;
+  border-radius: 0%;
+  cursor: pointer;
+  background-color: #F4F4F4;
+}
+.product-card-general-main-additional-one-amount__button--decrease:hover, .product-card-general-main-additional-one-amount__button--increase:hover {
+  background-color: white;
+  outline: #F4F4F4 solid 1px;
+}
+.product-card-general-main-additional-one-amount__text {
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+}
+.product-card-general-main-additional-one-size-info-option__text, .product-card-general-main-additional-one-size-info-option__text--checked {
+  background-color: white;
+  border: none;
+  font-family: "InterLight";
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0px;
+  margin-right: 1.2em;
+  cursor: pointer;
+}
+.product-card-general-main-additional-one-size-info-option__text:hover, .product-card-general-main-additional-one-size-info-option__text--checked:hover {
+  font-weight: 600;
+}
+.product-card-general-main-additional-one-size-info-option__text--checked, .product-card-general-main-additional-one-size-info-option__text--checked--checked {
+  font-weight: 600;
+  cursor: default;
+}
+.product-card-general-main-additional-one-size-info-table {
+  text-decoration: underline;
+  cursor: pointer;
+  padding-top: 0.8em;
+}
+.product-card-general-main-additional-one-price {
+  padding-top: 2.5em;
+  padding-bottom: 0.625em;
+  font-size: 16px;
+  font-weight: 600;
+}
+.product-card-general-main-additional-info {
+  padding-top: 4.375em;
+}
+.product-card-general-main-additional-info-about__heading {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.product-card-general-main-additional-info-about__heading::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-image: url(src/images/general/icons/bx_bx-minus.png);
+}
+.product-card-general-main-additional-info-about__heading--hide {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.product-card-general-main-additional-info-about__heading--hide::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-image: url(src/images/general/icons/ant-design_plus-outlined.png);
+}
+.product-card-general-main-additional-info-about__text, .product-card-general-main-additional-info-about__line {
+  margin-top: 1em;
+}
+
+/* end card-product styles */
 /* end styles */
 /* responsive*/
 @media screen and (min-width: 1990px) {

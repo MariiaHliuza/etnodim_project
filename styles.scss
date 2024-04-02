@@ -6,6 +6,8 @@ $additional_color_two: #F4F4F4;
 $additional_color_three: #565656;
 $main_font:"InterLight";
 $main_font_size: 16px;
+$paragraph_font_size: 14px;
+
 $main_font_weight: 300;
 $header_font:"DelaGothicOne";
 $transition: all 0.2s ease-in;
@@ -48,6 +50,9 @@ h1{
 }
 h2{
     font-size: 36px;
+}
+h3{
+    font-size: 18px;
 }
 a{
     text-decoration: none;
@@ -280,10 +285,10 @@ input[type=button]:hover{
                         width: 19.8em;
                         height: 25em;
                         object-fit: cover;
+                        transition: all .5s;
                         &:hover{
                             width: 15.8em;
                             height: 21em;
-                            transition: all .5s;
                         }
                     }
                 }
@@ -478,15 +483,6 @@ footer{
         }
     }
 
-    // .filter{
-    //     @include font($main_font, 14px, $font_weight);
-    //     &-size{
-    //         &__button{
-    //             font-weight: 600;
-    //         }
-
-    //     }
-    // }
     .catalog-general{
         .catalog-general-section{
             .catalog-upper{
@@ -566,10 +562,10 @@ footer{
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
+                            transition: all .5s;
                             &:hover{
                                 width: 80%;
                                 height: 80%;
-                                transition: all .5s;
                             }
                         }
                     }
@@ -610,10 +606,162 @@ footer{
         }
     }
 }
-
-
-
 /* end catalog-woman-embroidery styles */
+
+
+/* card-product styles */
+.product-card{
+    &-general{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: $paragraph_font_size;
+        &-images{
+            width: 100%;
+            height: fit-content;
+            margin-left: -5.8em;
+            display: flex;
+            flex-wrap: wrap;
+            &-main{
+                width: 100%;
+                height: fit-content;
+                &__photo{
+                    width: 100%;
+                    object-fit: cover;
+                    height: 50em;
+                    padding-bottom: 3%;
+                    cursor: pointer;
+                    &:hover{
+                        outline: white solid 10px;
+                    }
+                }
+            }
+            &-additional{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                &__photo{
+                    width: 48%;
+                    object-fit: cover;
+                    height: 25.94em;
+                    padding-bottom: 3%;
+                }
+            }
+        }
+        &-main{
+            padding-right: 5.5em;
+            &-info{
+                &__namecompany{
+                    text-transform: uppercase;
+                    color: $additional_color;
+                }
+            }
+            &-additional{
+                padding-top: 2.5em;
+                &-one{
+                    &-color{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1.25em;
+                    }
+                    &-amount{
+                        padding-left: 2.94em;
+                        &__button--decrease, &__button--increase{
+                            font-weight: 400;
+                            font-size: $main_font_size;
+                            width: 1.3125em;
+                            height: 1.3125em;
+                            border: none;
+                            border-radius: 0%;
+                            cursor: pointer;
+                            background-color: $additional_color_two;
+                            &:hover{
+                                background-color: white;
+                                outline: $additional_color_two solid 1px;
+                            }
+                        }
+                        &__text{
+                            padding-left: 0.625em;
+                            padding-right: 0.625em;
+                        }
+                    }
+                    &-size{
+                        &-info{
+                            &-option{
+                                &__text, &__text--checked{
+                                    background-color: white;
+                                    border: none;
+                                    @include font($main_font, $paragraph_font_size, $main_font_weight);
+                                    padding: 0px;
+                                    margin-right: 1.2em;
+                                    cursor: pointer;
+                                    &:hover{
+                                        font-weight: 600;
+                                    }
+                                    &--checked{
+                                        font-weight: 600;
+                                        cursor: default;
+                                    }
+                                }
+                            }
+                            &-table{
+                                text-decoration: underline;
+                                cursor: pointer;
+                                padding-top: 0.8em;
+                            }
+                        }
+                    }
+                    &-price{
+                        padding-top: 2.5em;
+                        padding-bottom: 0.625em;
+                        font-size: $main_font_size;
+                        font-weight: 600;
+                    }
+                }
+            }
+            &-additional-info{
+                padding-top: 4.375em;
+                &-about{
+                    &__heading{
+                        font-size: 16px;
+                        font-weight: 700;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        cursor: pointer;
+                        transition: $transition;
+                        &::after{
+                            content: '';
+                            width: 1em;
+                            height: 1em;
+                            background-image: url(src/images/general/icons/bx_bx-minus.png);
+                        }
+                        &--hide{
+                            font-size: 16px;
+                            font-weight: 700;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            cursor: pointer;
+                            transition: $transition;
+                            &::after{
+                                content: '';
+                                width: 1em;
+                                height: 1em;
+                                background-image: url(src/images/general/icons/ant-design_plus-outlined.png);
+                            }
+                        }
+                    }
+                    &__text, &__line{
+                        margin-top: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end card-product styles */
+
 
 /* end styles */
 

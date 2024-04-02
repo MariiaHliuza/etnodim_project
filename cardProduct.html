@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normilize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="src/images/general/favicon.png">
+    <script src="script.js"></script>
 </head>
 <body>
         <!-- laptop-header -->
@@ -57,12 +58,112 @@
         <main class="product-card">
             <div class="product-card-general">
                 <div class="product-card-general-images">
+                    <div class="product-card-general-images-main">
+                        <img src="src/images/catalog/catalog_item1.png" alt="vyshyvanka" class="product-card-general-images-main__photo">
+                    </div>
+                    <div class="product-card-general-images-additional">
+                        <img src="src/images/catalog/1/image 1 (1).png" alt="vyshyvanka1" class="product-card-general-images-additional__photo">
+                        <img src="src/images/catalog/1/image 2 (1).png" alt="vyshyvanka2" class="product-card-general-images-additional__photo">
+                        <img src="src/images/catalog/1/image 3.png" alt="vyshyvanka3" class="product-card-general-images-additional__photo">
+                        <img src="src/images/catalog/1/image 4.png" alt="vyshyvanka4" class="product-card-general-images-additional__photo">
 
+                    </div>
                 </div>
                 <div class="product-card-general-main">
                     <div class="product-card-general-main-info">
                         <span class="product-card-general-main-info__namecompany">entodim</span>
                         <h3 class="product-card-general-main-info__name">Вишиванка з рослинним орнаментом Lito</h3>
+                    </div>
+                    <div class="product-card-general-main-additional">
+                        <div class="product-card-general-main-additional-one">
+                            <div class="product-card-general-main-additional-one-color">
+                                <span id="colorProduct" class="product-card-general-main-additional-one-color__text">Колір: бежевий</span>
+                                <div class="product-card-general-main-additional-one-amount">
+                                    <button id="amountButton-decrease" class="product-card-general-main-additional-one-amount__button--decrease">-</button>
+                                    <span id="amountProduct" class="product-card-general-main-additional-one-amount__text">1</span>
+                                    <button id="amountButton-increase" class="product-card-general-main-additional-one-amount__button--increase" onclick="amountCalculateIncrease()">+</button>
+                                </div>
+                            </div>
+                            <div class="product-card-general-main-additional-one-size">
+                                <div class="product-card-general-main-additional-one-size-info">
+                                    <div class="product-card-general-main-additional-size-info-option">
+                                        <button id="product-Size1" class="product-card-general-main-additional-one-size-info-option__text">32 | XXS</button>
+                                        <button id="product-Size2" class="product-card-general-main-additional-one-size-info-option__text">34 | XS</button>
+                                        <button id="product-Size3" class="product-card-general-main-additional-one-size-info-option__text">36 | S</button>
+                                        <button id="product-Siz4e" class="product-card-general-main-additional-one-size-info-option__text--checked" >38 | M</button>
+                                        <button id="product-Size5" class="product-card-general-main-additional-one-size-info-option__text">40 | L</button>
+                                        <button id="product-Size6" class="product-card-general-main-additional-one-size-info-option__text">42 | XL</button>
+                                    </div>
+                                    <div class="product-card-general-main-additional-one-size-info-table">
+                                        <a href="" class="product-card-general-main-additional-size-info-table__text">Таблиця розмірів</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card-general-main-additional-one-price">
+                                <span id="priceProduct" class="product-card-general-main-additional-one-price__text">2 800 грн.</span>
+                            </div>
+                            <input class="product-card-general-main-additional-one__button" type="button" value="купити">
+                        </div>
+                    </div>
+                    <div class="product-card-general-main-additional-info">
+                        <div class="product-card-general-main-additional-info-about">
+                            <span id="product-about" class="product-card-general-main-additional-info-about__heading">Про товар</span>
+                            <p id="product-about-text" class="product-card-general-main-additional-info-about__text">
+                                Тепло, на яке кожен так довго чекав, здається прийшло. А разом з ним нова  вишиванка під назвою LITO.<br>
+                                <br>
+                                Створена в ніжному кремовому відтінку на тлі якого щедро розмістились польові квіти. Фактурні та різноманітні, кольорові, унікальні-саме такі, як спогади про літо дизайнерки Лілії Касянчук, котра через вишивку передала спогади із власного дитинства.<br>
+                                <br>
+                                Сорочка стане невід’ємною частиною гардеробу не тільки на весняно- літній сезон, але й поверне вас до спогадів про літо в холодну пору року.<br>
+                                <br>
+                                Якщо Ви не впевнені щодо розміру - зверніться до наших менеджерів, ми завжди раді Вам допомогти.<br>
+                            </p>
+                            <hr class="product-card-general-main-additional-info-about__line">
+                        </div>
+
+                        <div class="product-card-general-main-additional-info-about">
+                            <span id="product-contain" class="product-card-general-main-additional-info-about__heading--hide">Склад та догляд</span>
+                            <p id="product-contain-text" class="product-card-general-main-additional-info-about__text" style="display: none;">
+                                Тепло, на яке кожен так довго чекав, здається прийшло. А разом з ним нова  вишиванка під назвою LITO.<br>
+                                <br>
+                                Створена в ніжному кремовому відтінку на тлі якого щедро розмістились польові квіти. Фактурні та різноманітні, кольорові, унікальні-саме такі, як спогади про літо дизайнерки Лілії Касянчук, котра через вишивку передала спогади із власного дитинства.<br>
+                                <br>
+                                Сорочка стане невід’ємною частиною гардеробу не тільки на весняно- літній сезон, але й поверне вас до спогадів про літо в холодну пору року.<br>
+                                <br>
+                                Якщо Ви не впевнені щодо розміру - зверніться до наших менеджерів, ми завжди раді Вам допомогти.<br>
+                            </p>
+                            <hr class="product-card-general-main-additional-info-about__line">
+                        </div>
+
+                        <div class="product-card-general-main-additional-info-about">
+                            <span id="product-delivery" class="product-card-general-main-additional-info-about__heading--hide">Доставка та оплата</span>
+                            <p id="product-delivery-text" class="product-card-general-main-additional-info-about__text" style="display: none;">
+                                Тепло, на яке кожен так довго чекав, здається прийшло. А разом з ним нова  вишиванка під назвою LITO.<br>
+                                <br>
+                                Створена в ніжному кремовому відтінку на тлі якого щедро розмістились польові квіти. Фактурні та різноманітні, кольорові, унікальні-саме такі, як спогади про літо дизайнерки Лілії Касянчук, котра через вишивку передала спогади із власного дитинства.<br>
+                                <br>
+                                Сорочка стане невід’ємною частиною гардеробу не тільки на весняно- літній сезон, але й поверне вас до спогадів про літо в холодну пору року.<br>
+                                <br>
+                                Якщо Ви не впевнені щодо розміру - зверніться до наших менеджерів, ми завжди раді Вам допомогти.<br>
+                            </p>
+                            <hr class="product-card-general-main-additional-info-about__line">
+                        </div>
+
+                        <div class="product-card-general-main-additional-info-about">
+                            <span id="product-reviews" class="product-card-general-main-additional-info-about__heading--hide">Відгуки</span>
+                            <p id="product-reviews-text" class="product-card-general-main-additional-info-about__text" style="display: none;">
+                                Тепло, на яке кожен так довго чекав, здається прийшло. А разом з ним нова  вишиванка під назвою LITO.<br>
+                                <br>
+                                Створена в ніжному кремовому відтінку на тлі якого щедро розмістились польові квіти. Фактурні та різноманітні, кольорові, унікальні-саме такі, як спогади про літо дизайнерки Лілії Касянчук, котра через вишивку передала спогади із власного дитинства.<br>
+                                <br>
+                                Сорочка стане невід’ємною частиною гардеробу не тільки на весняно- літній сезон, але й поверне вас до спогадів про літо в холодну пору року.<br>
+                                <br>
+                                Якщо Ви не впевнені щодо розміру - зверніться до наших менеджерів, ми завжди раді Вам допомогти.<br>
+                            </p>
+                            <hr class="product-card-general-main-additional-info-about__line">
+                        </div>
+
+                        
+                        
                     </div>
 
                 </div>
@@ -141,5 +242,35 @@
         </div>
     </footer>
     <!-- end footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#product-about").click(function(){
+                $("#product-about").toggleClass("product-card-general-main-additional-info-about__heading--hide");
+                $("#product-about-text").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#product-contain").click(function(){
+                $("#product-contain").toggleClass("product-card-general-main-additional-info-about__heading");
+                $("#product-contain-text").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#product-delivery").click(function(){
+                $("#product-delivery").toggleClass("product-card-general-main-additional-info-about__heading");
+                $("#product-delivery-text").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#product-reviews").click(function(){
+                $("#product-reviews").toggleClass("product-card-general-main-additional-info-about__heading");
+                $("#product-reviews-text").slideToggle("slow");
+            });
+        });
+    </script>
 </body>
 </html>
