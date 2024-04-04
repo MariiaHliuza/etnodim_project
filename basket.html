@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик</title>
+    <link rel="stylesheet" href="normilize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="src/images/general/favicon.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- laptop-header -->
+    <header class="laptop-header" id="headerID">
+        <nav>
+            <div class="laptop-header-menu">
+                <a href="catalog.html" class="laptop-header-menu__nav_red">Каталог</a>
+                <a href="#" class="laptop-header-menu__nav">Знижки</a>
+                <a href="#" class="laptop-header-menu__nav">Блог</a>
+                <a href="#" class="laptop-header-menu__nav">Про нас</a>
+            </div>
+        </nav>
+            <div class="logo">
+                <a href="index.html"><img class="logo__image" src="src/images/general/etnodim-logo-main-removebg-preview 1 (1).png" alt="etnodim logo"></a>
+            </div>
+            <div class="laptop-header-additional">
+                <select class="laptop-header-additional__language">
+                    <option id="ua" value="ua">ua</option>
+                    <option id="en" value="en">en</option>
+                    <option id="fr" value="fr">fr</option>
+                    <option id="ge" value="ge">ge</option>
+                </select>
+                <select class="laptop-header-additional__value">
+                    <option id="hryvna" value="hryvna">₴</option>
+                    <option id="dollar" value="dollar">$</option>
+                    <option id="euro" value="euro">€</option>
+                </select>
+                <a href="tel:+380978889292" class="laptop-header-additional__number">+38 097 888 92 92</a>
+                <a href="#"><img src="src/images/general/icons/ei_search.png" alt="ei_search" class="laptop-header-additional__icon-searching"></a>
+                <a href="basket.html"><img src="src/images/general/icons/cart.png" alt="cart" class="laptop-header-additional__icon-cart"></a>
+            </div>
+    </header>
+    <!-- end laptop-header -->
+
+    <!-- mobile-header -->
+    <header class="mobile-header">
+        <nav>
+        </nav>
+    </header>
+
+    <nav class="catalog-navigation">
+        <a href="index.html" class="catalog-navigation__text">Головна</a>
+        <a href="" class="catalog-navigation__text">Жінкам</a>
+        <a href="catalog.html" class="catalog-navigation__text">Жіночі вишиванки</a>
+        <a href="cardProduct.html" class="catalog-navigation__text">Вишиванка з рослинним орнаментом Lito</a>
+        <a href="basket.html" class="catalog-navigation__text--current">Кошик</a>
+    </nav>
+
+    <main class="basket">
+        <div class="basket-general">
+            <div class="basket-general-up">
+
+                <div class="basket-general-up-up">
+                    <img src="src/images/catalog/catalog_item1.png" alt="order" class="basket-general-up-up__image">
+                    <div class="basket-general-up-up-info">
+                        <h5 class="basket-general-up-up-info__heading">Вишиванка з рослинним<br> орнаментом Lito</h5>
+                        <div class="basket-general-up-up-info-add">
+                            <span class="basket-general-up-up-info-add__text">Колір:</span>
+                            <span class="basket-general-up-up-info-add__text--bold">бежевий</span>
+                        </div>
+                        <div class="basket-general-up-up-info-add">
+                            <span class="basket-general-up-up-info-add__text">Розмір:</span>
+                            <select  class="basket-general-up-up-info-add-select">
+                                <option value="xxs" class="basket-general-up-up-info-add-select-option">32 | XXS</option>
+                                <option value="xs" class="basket-general-up-up-info-add-select-option">34 | XS</option>
+                                <option value="s" class="basket-general-up-up-info-add-select-option">36 | S</option>
+                                <option value="m" class="basket-general-up-up-info-add-select-option">38 | M</option>
+                                <option value="l" class="basket-general-up-up-info-add-select-option">40 | L</option>
+                                <option value="xl" class="basket-general-up-up-info-add-select-option">42 | XL</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="basket-general-up-bottom">
+                    <hr class="basket-general-up-bottom__line">
+                    <div class="basket-general-up-bottom-price">
+                        <h5 class="basket-general-up-bottom-price__text">До сплати</h5>
+                        <h5 class="basket-general-up-bottom-price__text--red">2 800 грн.</h5>
+                </div>
+                </div>
+            </div>
+
+            <div class="basket-general-bottom">
+                <p class="basket-general-bottom__paragraph">
+                    Не турбуйтесь якщо вам не підійде розмір, всі моделі мають різний крій: одні маломірні, інші повнорозмірні. На кожен наш товар розповсюджується гарантія, яка дозволяє обміняти або повернути річ протягом 31го дня після дати покупки.<br>
+                    <br>
+                    Таке повернення можливе за умови, якщо товар не був у використанні. Зверніться до менеджера магазину, він надасть вам більш детальну інформацію.
+                </p>
+            </div>
+        </div>
+
+        <form class="basket-order">
+            <div class="basket-order-up">
+                <div class="basket-order-block">
+                    <span class="basket-order-block-text">Ціна</span>
+                    <span class="basket-order-block-text--bold">2 800 грн.</span>
+                </div>
+                <div class="basket-order-block">
+                    <span class="basket-order-block-text">Кількість</span>
+                    <span class="basket-order-block-text--bold">2 800 грн.</span>
+                </div>
+                <div class="basket-order-block">
+                    <span class="basket-order-block-text">Сума</span>
+                    <span class="basket-order-block-text--bold">2 800 грн.</span>
+                </div>
+                <div class="basket-order-icon">
+                    <a href="" class="basket-order-icon-link">
+                        <svg class="basket-order-icon-link__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L19 19M19 3L3 19" stroke="#939694"/>
+                            </svg>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="basket-order-bottom">
+                <input type="button" class="basket-order-bottom__button" value="оформити замовлення">
+                <button class="basket-order-bottom__button--underlined">продовжити покупки</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>

@@ -33,6 +33,10 @@ h3 {
   font-size: 18px;
 }
 
+h5 {
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -720,6 +724,72 @@ footer .arrow_up {
 }
 
 /* end card-product styles */
+/* basket styles */
+.basket {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 2em;
+}
+.basket-general-up {
+  margin-bottom: 4.5625em;
+}
+.basket-general-up-up {
+  display: flex;
+  margin-bottom: 3.75em;
+}
+.basket-general-up-up__image {
+  width: 142px;
+  height: 171px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.basket-general-up-up-info {
+  padding-left: 1.875em;
+}
+.basket-general-up-up-info__heading {
+  margin-bottom: 2.5em;
+}
+.basket-general-up-up-info-add {
+  font-size: 14px;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 30% 30%;
+}
+.basket-general-up-up-info-add__text {
+  margin-bottom: 0.625em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.basket-general-up-up-info-add__text--bold {
+  font-weight: 600;
+  padding-left: 0.2em;
+}
+.basket-general-up-up-info-add-select {
+  border: none;
+  padding-left: 0px;
+  font-family: "InterLight";
+  font-size: 14px;
+  font-weight: 600;
+}
+.basket-general-up-bottom {
+  width: 50%;
+}
+.basket-general-up-bottom__line {
+  margin: 0px;
+}
+.basket-general-up-bottom-price {
+  padding-top: 1.27em;
+  display: flex;
+  justify-content: space-between;
+}
+.basket-general-up-bottom-price__text--red {
+  color: #DA1F39;
+}
+.basket-general-bottom {
+  font-size: 14px;
+}
+
+/* end basket styles */
 /* end styles */
 /* responsive*/
 @media screen and (min-width: 1990px) {
