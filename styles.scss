@@ -70,15 +70,17 @@ body {
 }
 
 input[type=button]{
+    padding: 1em 2em 1em 2em;
     background-color: $main_color;
     border: none;
     color: white;
     text-transform: uppercase;
     font-family: $main_font;
+    font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.07em;
     height: 50px;
-    width: 225px;
+    min-width: 225px;
     cursor: pointer;
 }
 input[type=button]:hover{
@@ -86,6 +88,33 @@ input[type=button]:hover{
         color: $main_color;
         background-color: white;
         transition: $transition; 
+}
+
+.amount{
+    &__button--decrease, &__button--increase{
+        font-weight: 400;
+        font-size: $main_font_size;
+        width: 1.3125em;
+        height: 1.3125em;
+        border: none;
+        border-radius: 0%;
+        cursor: pointer;
+        background-color: $additional_color_two;
+        &:hover{
+            background-color: white;
+            outline: $additional_color_two solid 1px;
+        }
+    }
+    &__value{
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+        width: 1.3125em;
+        border: none;
+        text-align: center;
+        &:active{
+            border: none;
+        }
+    }
 }
 
 /*drop-down button styles*/
@@ -614,6 +643,9 @@ footer{
 
 /* card-product styles */
 .product-card{
+    .amount{
+        padding-left: 2.94em;
+    }
     &-general{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -666,27 +698,6 @@ footer{
                         display: flex;
                         align-items: center;
                         margin-bottom: 1.25em;
-                    }
-                    &-amount{
-                        padding-left: 2.94em;
-                        &__button--decrease, &__button--increase{
-                            font-weight: 400;
-                            font-size: $main_font_size;
-                            width: 1.3125em;
-                            height: 1.3125em;
-                            border: none;
-                            border-radius: 0%;
-                            cursor: pointer;
-                            background-color: $additional_color_two;
-                            &:hover{
-                                background-color: white;
-                                outline: $additional_color_two solid 1px;
-                            }
-                        }
-                        &__text{
-                            padding-left: 0.625em;
-                            padding-right: 0.625em;
-                        }
                     }
                     &-size{
                         &-info{
@@ -766,10 +777,13 @@ footer{
 /* end card-product styles */
 
 /* basket styles */
+.basket, .basket-empty{
+    margin-bottom: 10em;
+}
 .basket{
     display: grid;
     grid-template-columns: 45% 55%;
-    gap: 2em;
+    
         &-general{
             &-up{
                 margin-bottom: 4.5625em;
@@ -790,9 +804,11 @@ footer{
                             font-size: $paragraph_font_size;
                             display: grid;
                             justify-items: start;
+                            align-items: center;
                             grid-template-columns: 30% 30%;
+                            margin-bottom: 0.625em;
                             &__text{
-                                margin-bottom: 0.625em;
+                                
                                 &--bold{
                                     font-weight: 600;
                                     padding-left: 0.2em;
@@ -808,30 +824,41 @@ footer{
                         }
                     }
                 }
-                &-bottom{
-                    width: 50%;
-                    &__line{
-                        margin: 0px;
-                    }
-                    &-price{
-                        padding-top: 1.27em;
-                        display: flex;
-                        justify-content: space-between;
-                        &__text{
-                            &--red{
-                                color: $main_color;
-                            }
+            }
+
+        }
+        &-order{
+            padding-left: 2em;
+            &-up{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 8.4em;
+                &-block{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    font-size: $paragraph_font_size;
+                    &-text{
+                        padding-bottom: 3.375em;
+                        &--bold{
+                            font-weight: 600;
                         }
                     }
                 }
-                
             }
-            &-bottom{
-                font-size: $paragraph_font_size;
-            }
-            
         }
+    }
+
+.basket-empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0em 5em 0em;
+    &__button{
+        margin-top: 1.5em;
+    }
 }
+
 /* end basket styles */
 
 /* end styles */

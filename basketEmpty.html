@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="normilize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="src/images/general/favicon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -56,59 +55,103 @@
         <a href="cardProduct.html" class="catalog-navigation__text">Вишиванка з рослинним орнаментом Lito</a>
         <a href="basket.html" class="catalog-navigation__text--current">Кошик</a>
     </nav>
+        
+    <main id="basketEmpty" class="basket-empty">
+        <h5 class="basket-empty__heading">Упс:( Кошик порожній</h5>
+        <input type="button" class="basket-empty__button" value="перейти до катологу" onclick="document.location='catalog.html'">
+    </main>
+    <section class="slider" id="newFounders">
 
-    <section class="basket">
-        <div class="basket-general">
-            <div class="basket-general-up">
-
-                <div class="basket-general-up-up">
-                    <img src="src/images/catalog/catalog_item1.png" alt="order" class="basket-general-up-up__image">
-                    <div class="basket-general-up-up-info">
-                        <h5 class="basket-general-up-up-info__heading">Вишиванка з рослинним<br> орнаментом Lito</h5>
-                        <div class="basket-general-up-up-info-add">
-                            <span class="basket-general-up-up-info-add__text">Колір:</span>
-                            <span class="basket-general-up-up-info-add__text--bold">бежевий</span>
-                        </div>
-                        <div class="basket-general-up-up-info-add">
-                            <span class="basket-general-up-up-info-add__text">Розмір:</span>
-                            <select  class="basket-general-up-up-info-add-select">
-                                <option value="xxs" class="basket-general-up-up-info-add-select-option">32 | XXS</option>
-                                <option value="xs" class="basket-general-up-up-info-add-select-option">34 | XS</option>
-                                <option value="s" class="basket-general-up-up-info-add-select-option">36 | S</option>
-                                <option value="m" class="basket-general-up-up-info-add-select-option">38 | M</option>
-                                <option value="l" class="basket-general-up-up-info-add-select-option">40 | L</option>
-                                <option value="xl" class="basket-general-up-up-info-add-select-option">42 | XL</option>
-                            </select>
-                        </div>
+        <div class="slider-general">
+            <div class="slider-general-top">
+                    <h2 class="slider-general-top__header">нові надходження</h2>
+                <div class="slider-general-top__arrow">
+                    <div class="slider-general-top__arrow--left">
+                        <svg width="52" height="8" viewBox="0 0 52 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.64637 4.35355C0.451107 4.15829 0.451107 3.84171 0.64637 3.64645L3.82835 0.464466C4.02361 0.269204 4.34019 0.269204 4.53546 0.464466C4.73072 0.659728 4.73072 0.976311 4.53546 1.17157L1.70703 4L4.53546 6.82843C4.73072 7.02369 4.73072 7.34027 4.53546 7.53553C4.34019 7.7308 4.02361 7.7308 3.82835 7.53553L0.64637 4.35355ZM51.0898 4.5L0.999924 4.5V3.5L51.0898 3.5V4.5Z" fill="#DA1F39"/>
+                        </svg>
+                    </div>
+                    <div class="slider-general-arrow--right">
+                        <svg width="52" height="8" viewBox="0 0 52 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M51.3986 4.35355C51.5938 4.15829 51.5938 3.84171 51.3986 3.64645L48.2166 0.464466C48.0213 0.269204 47.7047 0.269204 47.5095 0.464466C47.3142 0.659728 47.3142 0.976311 47.5095 1.17157L50.3379 4L47.5095 6.82843C47.3142 7.02369 47.3142 7.34027 47.5095 7.53553C47.7047 7.7308 48.0213 7.7308 48.2166 7.53553L51.3986 4.35355ZM0.955078 4.5L51.045 4.5V3.5L0.955078 3.5V4.5Z" fill="#DA1F39"/>
+                        </svg>
                     </div>
                 </div>
-                </div>
-        </div>
-
-        <div class="basket-order">
-            <div class="basket-order-up">
-                <div class="basket-order-up-block">
-                    <span class="basket-order-up-block-text">Ціна</span>
-                    <span class="basket-order-up-block-text--bold">2 800 грн.</span>
-                </div>
-                <div class="basket-order-up-block">
-                    <span class="basket-order-up-block-text">Кількість</span>
-                    <div class="amount">
-                        <button id="amountButton-decrease" class="amount__button--decrease" name="decrease" operation="-">-</button>
-                        <input type="text" id="amountProduct1" class="amount__value" name="input" value="1" min="1">
-                        <button id="amountButton-increase" class="amount__button--increase" name="increase" operation="+">+</button>
+            </div>
+    
+            <div class="slider-general-block">
+                <div class="slider-general-block-card">
+                    <div class="slider-general-block-card-fit">
+                        <img class="slider-general-block-card-fit__image" src="src/images/photo1.png" alt="photo1">
+                    </div>
+                    <div class="slider-general-block-card-description">
+                        <p class="slider-general-block-card-description__paragraph">Набір для створення вишивки Home Tree Green</p>
+                    </div>
+                    <div class="slider-general-block-card-price">
+                        <span class="slider-general-block-card-price__number">2 120</span> <span class="slider-general-block-card-price__value"> грн.</span>
                     </div>
                 </div>
-                <div class="basket-order-up-block">
-                    <span class="basket-order-up-block-text">Сума</span>
-                    <span class="basket-order-up-block-text--bold">2 800 грн.</span>
+    
+                <div class="slider-general-block-card">
+                    <div class="slider-general-block-card-fit">
+                        <img class="slider-general-block-card-fit__image" src="src/images/photo3.png" alt="photo3">
+                    </div>
+                    <div class="slider-general-block-card-description">
+                        <p class="slider-general-block-card-description__paragraph">Легка блузка вільного крою з орнаментом Indi</p>
+                    </div>
+                    <div class="slider-general-block-card-price">
+                        <span class="slider-general-block-card-price__number">3 800</span> <span class="slider-general-block-card-price__value"> грн.</span>
+                    </div>
                 </div>
-                <div class="basket-order-up-icon">
-                    <a href="basketEmpty.html" class="basket-order-up-icon-link">
-                        <svg class="basket-order-up-icon-link__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 3L19 19M19 3L3 19" stroke="#939694"/>
-                            </svg>
-                    </a>
+    
+                <div class="slider-general-block-card">
+                    <div class="slider-general-block-card-fit">
+                        <img class="slider-general-block-card-fit__image" src="src/images/photo4.png" alt="photo4">
+                    </div>
+                    <div class="slider-general-block-card-description">
+                        <p class="slider-general-block-card-description__paragraph">Чоловіча лльна сорочка з вишивкою Sky</p>
+                    </div>
+                    <div class="slider-general-block-card-price">
+                        <span class="slider-general-block-card-price__number">2 800</span> <span class="slider-general-block-card-price__value"> грн.</span>
+                    </div>
+                </div>
+    
+                <div class="slider-general-block">
+                    <div class="slider-general-block-card">
+                        <div class="slider-general-block-card-fit">
+                            <img class="slider-general-block-card-fit__image" src="src/images/photo1.png" alt="photo1">
+                        </div>
+                        <div class="slider-general-block-card-description">
+                            <p class="slider-general-block-card-description__paragraph">Набір для створення вишивки Home Tree Green</p>
+                        </div>
+                        <div class="slider-general-block-card-price">
+                            <span class="slider-general-block-card-price__number">2 120</span> <span class="slider-general-block-card-price__value"> грн.</span>
+                        </div>
+                    </div>
+        
+                    <div class="slider-general-block-card">
+                        <div class="slider-general-block-card-fit">
+                            <img class="slider-general-block-card-fit__image" src="src/images/photo3.png" alt="photo3">
+                        </div>
+                        <div class="slider-general-block-card-description">
+                            <p class="slider-general-block-card-description__paragraph">Легка блузка вільного крою з орнаментом Indi</p>
+                        </div>
+                        <div class="slider-general-block-card-price">
+                            <span class="slider-general-block-card-price__number">3 800</span> <span class="slider-general-block-card-price__value"> грн.</span>
+                        </div>
+                    </div>
+        
+                    <div class="slider-general-block-card">
+                        <div class="slider-general-block-card-fit">
+                            <img class="slider-general-block-card-fit__image" src="src/images/photo4.png" alt="photo4">
+                        </div>
+                        <div class="slider-general-block-card-description">
+                            <p class="slider-general-block-card-description__paragraph">Чоловіча лльна сорочка з вишивкою Sky</p>
+                        </div>
+                        <div class="slider-general-block-card-price">
+                            <span class="slider-general-block-card-price__number">2 800</span> <span class="slider-general-block-card-price__value"> грн.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,7 +160,7 @@
 <footer>
     <div class="main_information">
         <a href="#headerID">
-            <div class="arrow_up" style="display: none;">
+            <div class="arrow_up">
                 <svg width="32" height="58" viewBox="0 0 32 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.5 57.5V1M16.5 1L31 15.5M16.5 1L1 15.5" stroke="#DA1F39"/>
                 </svg>

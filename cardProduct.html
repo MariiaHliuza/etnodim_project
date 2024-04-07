@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normilize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="src/images/general/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -78,10 +79,10 @@
                         <div class="product-card-general-main-additional-one">
                             <div class="product-card-general-main-additional-one-color">
                                 <span id="colorProduct" class="product-card-general-main-additional-one-color__text">Колір: бежевий</span>
-                                <div class="product-card-general-main-additional-one-amount">
-                                    <button id="amountButton-decrease" class="product-card-general-main-additional-one-amount__button--decrease">-</button>
-                                    <span id="amountProduct" class="product-card-general-main-additional-one-amount__text">1</span>
-                                    <button id="amountButton-increase" class="product-card-general-main-additional-one-amount__button--increase" onclick="amountCalculateIncrease()">+</button>
+                                <div class="amount">
+                                    <button id="amountButton-decrease" class="amount__button--decrease" name="decrease" operation="-">-</button>
+                                    <input type="text" id="amountProduct1" class="amount__value" name="input" value="1" min="1">
+                                    <button id="amountButton-increase" class="amount__button--increase" name="increase" operation="+">+</button>
                                 </div>
                             </div>
                             <div class="product-card-general-main-additional-one-size">
@@ -242,35 +243,6 @@
         </div>
     </footer>
     <!-- end footer -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#product-about").click(function(){
-                $("#product-about").toggleClass("product-card-general-main-additional-info-about__heading--hide");
-                $("#product-about-text").slideToggle("slow");
-            });
-        });
-
-        $(document).ready(function(){
-            $("#product-contain").click(function(){
-                $("#product-contain").toggleClass("product-card-general-main-additional-info-about__heading");
-                $("#product-contain-text").slideToggle("slow");
-            });
-        });
-
-        $(document).ready(function(){
-            $("#product-delivery").click(function(){
-                $("#product-delivery").toggleClass("product-card-general-main-additional-info-about__heading");
-                $("#product-delivery-text").slideToggle("slow");
-            });
-        });
-
-        $(document).ready(function(){
-            $("#product-reviews").click(function(){
-                $("#product-reviews").toggleClass("product-card-general-main-additional-info-about__heading");
-                $("#product-reviews-text").slideToggle("slow");
-            });
-        });
-    </script>
+    
 </body>
 </html>
