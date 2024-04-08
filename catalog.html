@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="normilize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="src/images/general/favicon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
 </head>
 <body>
     <!-- laptop-header -->
@@ -43,21 +41,33 @@
     </header>
     <!-- end laptop-header -->
 
-    <!-- mobile-header -->
-    <header class="mobile-header">
-        <nav>
-        </nav>
+     <!-- mobile-header -->
+     <header class="mobile-header" id="headerID">
+        <div class="mobile-header-menu">
+            <svg width="20" height="9" viewBox="0 0 20 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="20" height="1" fill="black"/>
+                <rect y="4" width="20" height="1" fill="black"/>
+                <rect y="8" width="10" height="1" fill="black"/>
+            </svg>
+        </div>
+        <div class="mobile-header-logo">
+            <a href="index.html"><img class="mobile-header-logo__image" src="src/images/general/etnodim-logo-main-removebg-preview 1 (1).png" alt="etnodim logo"></a>
+        </div>
+        <div class="mobile-header-additional">
+            <a href="#"><img src="src/images/general/icons/ei_search.png" alt="ei_search" class="laptop-header-additional__icon-searching"></a>
+            <a href="basket.html"><img src="src/images/general/icons/cart.png" alt="cart" class="laptop-header-additional__icon-cart"></a>
+        </div>
     </header>
     <!-- end mobile-header -->
 
     <!-- catalog-woman-embroidery -->
-    <nav class="catalog-navigation">
+    <nav class="catalog-navigation laptop">
         <a href="index.html" class="catalog-navigation__text">Головна</a>
         <a href="" class="catalog-navigation__text">Жінкам</a>
         <a href="" class="catalog-navigation__text--current">Жіночі вишиванки</a>
     </nav>
     <div class="catalog-main-block">
-        <aside class="filter">
+        <aside class="filter laptop">
             <div class="filter-block">
                 <button id="dropDownIdSize" class="filter-block__button">Розмір</button>
                 <div class="filter-block-list" id="DropDownListIdSize">
@@ -123,7 +133,7 @@
             </div>
 
             <div class="filter-block">
-                <button id="dropDownIdSeason" class="filter-block__button">Сезон</button>
+                <button id="dropDownIdSeason" class="filter-block__button--hide">Сезон</button>
                 <div class="filter-block-list" id="DropDownListIdSeason" style="display: none;">
                     <div class="filter-block-list-option">
                         <input id="season-spring" class="filter-block-list-option__checkbox" type="checkbox">
@@ -145,7 +155,7 @@
             </div>
 
             <div class="filter-block">
-                <button id="dropDownIdMaterial" class="filter-block__button">Тканина</button>
+                <button id="dropDownIdMaterial" class="filter-block__button--hide">Тканина</button>
                 <div class="filter-block-list" id="DropDownListIdMaterial" style="display: none;">
                     <div class="filter-block-list-option">
                         <input id="material-cotton" class="filter-block-list-option__checkbox" type="checkbox">
@@ -167,7 +177,7 @@
             </div>
 
             <div class="filter-block">
-                <button id="dropDownIdSleeve" class="filter-block__button">Рукав</button>
+                <button id="dropDownIdSleeve" class="filter-block__button--hide">Рукав</button>
                 <div class="filter-block-list" id="DropDownListIdSleeve" style="display: none;">
                     <div class="filter-block-list-option">
                         <input id="sleeve-cut" class="filter-block-list-option__checkbox" type="checkbox">
@@ -184,10 +194,11 @@
                 </div>
             </div>
         </aside>
+        
         <main class="catalog-general">
             <section class="catalog-general-section">
                 <div class="catalog-upper">
-                    <div class="sorting">
+                    <div class="sorting laptop">
                         <div class="sorting-four">
                             <div class="sorting-four__square"></div>
                             <div class="sorting-four__square"></div>
@@ -214,11 +225,18 @@
                             </select>
                         </div>
                     </div>
-                        <h2 class="catalog-name__text">
-                            <a href="" class="catalog-name__link">Жіночі вишиванки</a>
-                        </h2>
+                    <h2 class="catalog-name__text">
+                        <a href="" class="catalog-name__link">Жіночі вишиванки</a>
+                    </h2>
                 </div>
+                <div class="catalog-upper-nav mobile">
+                    <button id="Filter" class="filter-block__button">Фільтри</button>
+                    <div class="catalog-upper-nav-sort">
+                        <span class="catalog-upper-nav-sort__span">Сортувати за:</span>
+                        <button id="Filter" class="filter-block__button">новинки</button>
+                    </div>
 
+                </div>
                 <div class="catalog-main">
                     <div class="catalog-main-card">
                         <a href="cardProduct.html">
@@ -330,7 +348,7 @@
                 </div>
                 <div class="catalog-buttom-next">
                     <div></div>
-                    <div class="catalog-buttom-next-content">
+                    <div class="catalog-buttom-next-content laptop">
                     <a href="" class="catalog-buttom-next-content__number--active">1</a>
                     <a href="" class="catalog-buttom-next-content__number">2</a>
                     <a href="" class="catalog-buttom-next-content__number">3</a>
@@ -416,5 +434,8 @@
         </div>
     </footer>
     <!-- end footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

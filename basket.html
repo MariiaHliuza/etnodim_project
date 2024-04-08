@@ -42,14 +42,27 @@
             </div>
     </header>
     <!-- end laptop-header -->
-
+         
     <!-- mobile-header -->
-    <header class="mobile-header">
-        <nav>
-        </nav>
-    </header>
+         <header class="mobile-header" id="headerID">
+            <div class="mobile-header-menu">
+                <svg width="20" height="9" viewBox="0 0 20 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="20" height="1" fill="black"/>
+                    <rect y="4" width="20" height="1" fill="black"/>
+                    <rect y="8" width="10" height="1" fill="black"/>
+                </svg>
+            </div>
+            <div class="mobile-header-logo">
+                <a href="index.html"><img class="mobile-header-logo__image" src="src/images/general/etnodim-logo-main-removebg-preview 1 (1).png" alt="etnodim logo"></a>
+            </div>
+            <div class="mobile-header-additional">
+                <a href="#"><img src="src/images/general/icons/ei_search.png" alt="ei_search" class="laptop-header-additional__icon-searching"></a>
+                <a href="basket.html"><img src="src/images/general/icons/cart.png" alt="cart" class="laptop-header-additional__icon-cart"></a>
+            </div>
+        </header>
+        <!-- end mobile-header -->
 
-    <nav class="catalog-navigation">
+    <nav class="catalog-navigation laptop">
         <a href="index.html" class="catalog-navigation__text">Головна</a>
         <a href="" class="catalog-navigation__text">Жінкам</a>
         <a href="catalog.html" class="catalog-navigation__text">Жіночі вишиванки</a>
@@ -57,14 +70,92 @@
         <a href="basket.html" class="catalog-navigation__text--current">Кошик</a>
     </nav>
 
-    <section class="basket">
-        <div class="basket-general">
-            <div class="basket-general-up">
+    <nav class="catalog-navigation-mobile mobile">
+        <div class="catalog-navigation-arrow">
+            <a href="cardProduct.html">
+                <svg class="catalog-navigation-arrow__svg" width="40" height="8" viewBox="0 0 52 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.64637 4.35355C0.451107 4.15829 0.451107 3.84171 0.64637 3.64645L3.82835 0.464466C4.02361 0.269204 4.34019 0.269204 4.53546 0.464466C4.73072 0.659728 4.73072 0.976311 4.53546 1.17157L1.70703 4L4.53546 6.82843C4.73072 7.02369 4.73072 7.34027 4.53546 7.53553C4.34019 7.7308 4.02361 7.7308 3.82835 7.53553L0.64637 4.35355ZM51.0898 4.5L0.999924 4.5V3.5L51.0898 3.5V4.5Z" fill="#DA1F39"/>
+                </svg>
+            </a>
+        </div>
+        <div class="catalog-navigation-name">
+            <span class="catalog-navigation-name__span">Вишиванка з рослинним орнаментом Lito</span>
+        </div>
+    </nav>
 
-                <div class="basket-general-up-up">
-                    <img src="src/images/catalog/catalog_item1.png" alt="order" class="basket-general-up-up__image">
+    <main class="main">
+        <section class="section">
+            <div class="basket laptop">
+                <div class="basket-general">
+                    <div class="basket-general-up">
+                        <div class="basket-general-up-up">
+                            <img src="src/images/catalog/catalog_item1.png" alt="order" class="basket-general-up-up__image">
+                            <div class="basket-general-up-up-info">
+                                <h5 class="basket-general-up-up-info__heading">Вишиванка з рослинним<br> орнаментом Lito</h5>
+                                <div class="basket-general-up-up-info-add">
+                                    <span class="basket-general-up-up-info-add__text">Колір:</span>
+                                    <span class="basket-general-up-up-info-add__text--bold">бежевий</span>
+                                </div>
+                                <div class="basket-general-up-up-info-add">
+                                    <span class="basket-general-up-up-info-add__text">Розмір:</span>
+                                    <select  class="basket-general-up-up-info-add-select">
+                                        <option value="xxs" class="basket-general-up-up-info-add-select-option">32 | XXS</option>
+                                        <option value="xs" class="basket-general-up-up-info-add-select-option">34 | XS</option>
+                                        <option value="s" class="basket-general-up-up-info-add-select-option">36 | S</option>
+                                        <option value="m" class="basket-general-up-up-info-add-select-option">38 | M</option>
+                                        <option value="l" class="basket-general-up-up-info-add-select-option">40 | L</option>
+                                        <option value="xl" class="basket-general-up-up-info-add-select-option">42 | XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-order">
+                    <div class="basket-order-up">
+                        <div class="basket-order-up-block">
+                            <span class="basket-order-up-block-text">Ціна</span>
+                            <span class="basket-order-up-block-text--bold">2 800 грн.</span>
+                        </div>
+                        <div class="basket-order-up-block">
+                            <span class="basket-order-up-block-text">Кількість</span>
+                            <div class="amount">
+                                <button id="amountButton-decrease" class="amount__button--decrease" name="decrease" operation="-">-</button>
+                                <input type="text" id="amountProduct1" class="amount__value" name="input" value="1" min="1">
+                                <button id="amountButton-increase" class="amount__button--increase" name="increase" operation="+">+</button>
+                            </div>
+                        </div>
+                        <div class="basket-order-up-block">
+                            <span class="basket-order-up-block-text">Сума</span>
+                            <span class="basket-order-up-block-text--bold">2 800 грн.</span>
+                        </div>
+                        <div class="basket-order-up-icon">
+                            <a href="basketEmpty.html" class="basket-order-up-icon-link">
+                                <svg class="basket-order-up-icon-link__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 3L19 19M19 3L3 19" stroke="#939694"/>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basket-mobile mobile">
+                <div class="basket-order-up-icon">
+                    <a href="basketEmpty.html" class="basket-order-up-icon-link">
+                        <svg class="basket-order-up-icon-link__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L19 19M19 3L3 19" stroke="#939694"/>
+                    </svg>
+                    </a>
+                </div>
+                <div class="basket-mobile-image">
+                    <img src="src/images/catalog/catalog_item1.png" class="basket-mobile-image__img" alt="item">
+                </div>
+                <div class="basket-mobile-info">
                     <div class="basket-general-up-up-info">
                         <h5 class="basket-general-up-up-info__heading">Вишиванка з рослинним<br> орнаментом Lito</h5>
+                    </div>
+                    <div>
                         <div class="basket-general-up-up-info-add">
                             <span class="basket-general-up-up-info-add__text">Колір:</span>
                             <span class="basket-general-up-up-info-add__text--bold">бежевий</span>
@@ -80,39 +171,43 @@
                                 <option value="xl" class="basket-general-up-up-info-add-select-option">42 | XL</option>
                             </select>
                         </div>
+                        <div class="basket-mobile-amount">
+                        <div class="amount">
+                            <button id="amountButton-decrease" class="amount__button--decrease" name="decrease" operation="-">-</button>
+                            <input type="text" id="amountProduct1" class="amount__value" name="input" value="1" min="1">
+                            <button id="amountButton-increase" class="amount__button--increase" name="increase" operation="+">+</button>
+                        </div>
+                        <span class="basket-mobile-amount__text">2 800 грн.</span>
                     </div>
-                </div>
-                </div>
-        </div>
-
-        <div class="basket-order">
-            <div class="basket-order-up">
-                <div class="basket-order-up-block">
-                    <span class="basket-order-up-block-text">Ціна</span>
-                    <span class="basket-order-up-block-text--bold">2 800 грн.</span>
-                </div>
-                <div class="basket-order-up-block">
-                    <span class="basket-order-up-block-text">Кількість</span>
-                    <div class="amount">
-                        <button id="amountButton-decrease" class="amount__button--decrease" name="decrease" operation="-">-</button>
-                        <input type="text" id="amountProduct1" class="amount__value" name="input" value="1" min="1">
-                        <button id="amountButton-increase" class="amount__button--increase" name="increase" operation="+">+</button>
                     </div>
-                </div>
-                <div class="basket-order-up-block">
-                    <span class="basket-order-up-block-text">Сума</span>
-                    <span class="basket-order-up-block-text--bold">2 800 грн.</span>
-                </div>
-                <div class="basket-order-up-icon">
-                    <a href="basketEmpty.html" class="basket-order-up-icon-link">
-                        <svg class="basket-order-up-icon-link__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 3L19 19M19 3L3 19" stroke="#939694"/>
-                            </svg>
-                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+
+            <div class="basket-end">
+                <hr class="basket-end__line">
+                <div class="basket-end-general">
+                    <div class="basket-end-general-pay">
+                        <div class="basket-end-general-pay-info">
+                            <h5 class="basket-end-general-pay-info__text">До сплати</h5>
+                            <h5 class="basket-end-general-pay-info__text--red">2 800 грн.</h5>
+                        </div>
+                    </div>
+                    <div class="basket-end-general-active">
+                        <input type="button" class="basket-end-general-active__input" value="оформити замовлення">
+                        <a class="basket-end-general-active__button" onclick="document.location='catalog.html'">продовжити покупки</a>
+                    </div>
+                </div>
+        
+                <div class="basket-end-text">
+                    <p class="basket-end-text__paragraph">
+                        Не турбуйтесь якщо вам не підійде розмір, всі моделі мають різний крій: одні маломірні, інші повнорозмірні. На кожен наш товар розповсюджується гарантія, яка дозволяє обміняти або повернути річ протягом 31го дня після дати покупки.<br>
+                        <br>
+                        Таке повернення можливе за умови, якщо товар не був у використанні. Зверніться до менеджера магазину, він надасть вам більш детальну інформацію :)
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 <!-- footer -->
 <footer>
     <div class="main_information">

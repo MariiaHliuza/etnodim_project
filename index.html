@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="normilize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="src/images/general/favicon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- laptop-header -->
@@ -44,9 +43,21 @@
     <!-- end laptop-header -->
 
     <!-- mobile-header -->
-    <header class="mobile-header">
-        <nav>
-        </nav>
+    <header class="mobile-header" id="headerID">
+        <div class="mobile-header-menu">
+            <svg width="20" height="9" viewBox="0 0 20 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="20" height="1" fill="black"/>
+                <rect y="4" width="20" height="1" fill="black"/>
+                <rect y="8" width="10" height="1" fill="black"/>
+            </svg>
+        </div>
+        <div class="mobile-header-logo">
+            <a href="index.html"><img class="mobile-header-logo__image" src="src/images/general/etnodim-logo-main-removebg-preview 1 (1).png" alt="etnodim logo"></a>
+        </div>
+        <div class="mobile-header-additional">
+            <a href="#"><img src="src/images/general/icons/ei_search.png" alt="ei_search" class="laptop-header-additional__icon-searching"></a>
+            <a href="basket.html"><img src="src/images/general/icons/cart.png" alt="cart" class="laptop-header-additional__icon-cart"></a>
+        </div>
     </header>
     <!-- end mobile-header -->
 
@@ -87,12 +98,47 @@
             </div>
         </div>
     </section>
+
+    <section class="banner-1280">
+        <div class="banner-text">
+            <div class="banner-text-block">
+                <h2 class="banner-text-block__header">
+                    <span class="banner-text-block__header--white">e</span>tnodim - магазин дизайнерських виши<span class="banner-text-block__header--white">ванок</span> ручної роботи та етні<span class="banner-text-block__header--white">чного</span> одягу
+                </h2>
+            </div>
+            <div class="banner-image">
+                <div class="banner-image-left">
+                    <img class="banner-image-left__image" src="src/images/general/DSC_8642.png" alt="model clothes">
+                </div>
+                <div class="banner-image-right">
+                    <img class="banner-image-left__right" src="src/images/general/image 33.png" alt="model clothes 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-970">
+        <div class="banner-text">
+            <div class="banner-text-block">
+                <h2 class="banner-text-block__header">
+                    <span class="banner-text-block__header--white">etn</span>odim - магазин дизайнерських ви<span class="banner-text-block__header--white">шива</span>нок ручної роботи та е<span class="banner-text-block__header--white">тнічн</span>ого одягу
+                </h2>
+            </div>
+            <div class="banner-image">
+                <div class="banner-image-left">
+                    <img class="banner-image-left__image" src="src/images/general/DSC_8642.png" alt="model clothes">
+                </div>
+                <div class="banner-image-right">
+                    <img class="banner-image-left__right" src="src/images/general/image 33.png" alt="model clothes 2">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- end banner-first -->
 
     <!-- slider -->
    <section class="slider" id="newFounders">
-
-    <div class="slider-general">
+    <div class="slider-general laptop">
         <div class="slider-general-top">
                 <h2 class="slider-general-top__header">нові надходження</h2>
             <div class="slider-general-top__arrow">
@@ -108,7 +154,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="slider-general-block">
             <div class="slider-general-block-card">
                 <div class="slider-general-block-card-fit">
@@ -181,6 +227,40 @@
                     <div class="slider-general-block-card-price">
                         <span class="slider-general-block-card-price__number">2 800</span> <span class="slider-general-block-card-price__value"> грн.</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-general-mobile mobile">
+        <div class="slider-general-mobile-top">
+                <h2 class="slider-general-mobile-top__header">нові надходження</h2>
+        </div>
+
+        <div class="slider-general-mobile-position">
+            <div class="slider-general-mobile-position__arrow">
+                <div class="slider-general-mobile-position__arrow--left">
+                    <svg width="52" height="8" viewBox="0 0 52 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.64637 4.35355C0.451107 4.15829 0.451107 3.84171 0.64637 3.64645L3.82835 0.464466C4.02361 0.269204 4.34019 0.269204 4.53546 0.464466C4.73072 0.659728 4.73072 0.976311 4.53546 1.17157L1.70703 4L4.53546 6.82843C4.73072 7.02369 4.73072 7.34027 4.53546 7.53553C4.34019 7.7308 4.02361 7.7308 3.82835 7.53553L0.64637 4.35355ZM51.0898 4.5L0.999924 4.5V3.5L51.0898 3.5V4.5Z" fill="#DA1F39"/>
+                    </svg>
+                </div>
+                <div class="slider-general-mobile-position__arrow--right">
+                    <svg width="52" height="8" viewBox="0 0 52 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M51.3986 4.35355C51.5938 4.15829 51.5938 3.84171 51.3986 3.64645L48.2166 0.464466C48.0213 0.269204 47.7047 0.269204 47.5095 0.464466C47.3142 0.659728 47.3142 0.976311 47.5095 1.17157L50.3379 4L47.5095 6.82843C47.3142 7.02369 47.3142 7.34027 47.5095 7.53553C47.7047 7.7308 48.0213 7.7308 48.2166 7.53553L51.3986 4.35355ZM0.955078 4.5L51.045 4.5V3.5L0.955078 3.5V4.5Z" fill="#DA1F39"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="slider-general-mobile-block">
+            <div class="slider-general-mobile-block-card">
+                <div class="slider-general-mobile-block-card-fit">
+                    <img class="slider-general-mobile-block-card-fit__image" src="src/images/catalog/catalog_item2.png" alt="photo1">
+                </div>
+                <div class="slider-general-mobile-block-card-description">
+                    <p class="slider-general-mobile-block-card-description__paragraph">Набір для створення вишивки Home Tree Green</p>
+                </div>
+                <div class="slider-general-mobile-block-card-price">
+                    <span class="slider-general-mobile-block-card-price__number">2 120</span> <span class="slider-general-block-card-price__value"> грн.</span>
                 </div>
             </div>
         </div>
@@ -278,5 +358,7 @@
         </div>
     </footer>
     <!-- end footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

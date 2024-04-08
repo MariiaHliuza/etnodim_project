@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function() {
     $('.amount__button--decrease').click(function () {
     var $input = $(this).parent().find('.amount__value');
@@ -61,21 +64,21 @@ $(document).ready(function() {
 
       $(document).ready(function(){
         $("#dropDownIdSeason").click(function(){
-          $("#dropDownIdSeason").toggleClass("filter-block__button--hide");
+          $("#dropDownIdSeason").toggleClass("filter-block__button");
           $("#DropDownListIdSeason").slideToggle("slow");
         });
       });
 
       $(document).ready(function(){
         $("#dropDownIdMaterial").click(function(){
-          $("#dropDownIdMaterial").toggleClass("filter-block__button--hide");
+          $("#dropDownIdMaterial").toggleClass("filter-block__button");
           $("#DropDownListIdMaterial").slideToggle("slow");
         });
       });
 
       $(document).ready(function(){
         $("#dropDownIdSleeve").click(function(){
-          $("#dropDownIdSleeve").toggleClass("filter-block__button--hide");
+          $("#dropDownIdSleeve").toggleClass("filter-block__button");
           $("#DropDownListIdSleeve").slideToggle("slow");
         });
       });
