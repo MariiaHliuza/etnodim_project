@@ -1488,5 +1488,13 @@ footer .arrow_up {
   .main-screen-block-information__header {
     max-width: 360px;
   }
+  .catalog-main-block .catalog-general .catalog-buttom {
+    display: flex;
+    justify-content: center;
+    margin-top: 51px;
+  }
+  .basket-mobile-info .basket-general-up-up-info__heading {
+    font-size: 16px;
+  }
 }
 /* end max-width:768px *//*# sourceMappingURL=styles.css.map */
