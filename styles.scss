@@ -163,6 +163,10 @@ input[type=button]:hover{
         margin-top: 2px;
     }
 }
+/*burger-menu styles*/
+
+/*end burger-menu styles*/
+
 /*end drop-down button styles*/
 
 /* end general styles*/
@@ -1362,10 +1366,12 @@ footer{
         margin: 0em -1em 0em -1em;
         height: 50%;
         .main_block{
-            height: 110%;
+            height: 105%;
+            margin-top: 0;
+            padding: 1.3em 1em 0 1em;
             .text_part{
-                margin-top: 21px;
-                margin-left: 1em;
+                margin-top: 0;
+                margin-left: 0;
                 h2{
                     padding-left: 2em;
                     padding-right: 2em;
@@ -1375,8 +1381,7 @@ footer{
                 //     color: $additional_color;
                 // }
                 h2{
-                    
-                    padding-bottom: 0;
+                    padding: 0 1em 0 1em;
                 }
                 p{
                     padding-bottom: 3.125em;
@@ -1385,9 +1390,10 @@ footer{
                 }
             }
             .image_part{
-                margin-left: -2em;
-                margin-right: -2em;
-                margin-top: 21px;
+                background-size: cover;
+                margin-left: 0;
+                margin-right: 0;
+                background: url(src/images/general/image\ 22\ \(1\).png);
                 }
             }
         }
@@ -1538,6 +1544,7 @@ footer{
             .basket-general-up-up-info{
                 padding-left: 0;
                 &__heading{
+                    max-width: 90%;
                     font-size: 20px;
                     margin-bottom: 0;
                 }
@@ -1558,7 +1565,10 @@ footer{
         }
     }
     .basket-general-up-up-info-add{
-        grid-template-columns: 18% 20%;
+        display: flex;
+    }
+    .basket-general-up-up-info-add__text{
+        width: 50px;
     }
     .main{
         .section{
