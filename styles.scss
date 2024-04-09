@@ -251,7 +251,7 @@ input[type=button]:hover{
     padding-top: 8.125em;
     padding-bottom: 8.125em;
     }
-    .banner-1280, .banner-970{
+    .banner-1280, .banner-970, .banner-768{
         display: none;
     }
 
@@ -410,7 +410,7 @@ display: none;
 
 /* end block_slider section styles */
 
-/* fourth_screen section styles */
+/* fourth screen section styles */
 .fourth_screen{
     .background{
         background: url(src/images/general/Rectangle\ 49\ \(1\).png);
@@ -454,7 +454,7 @@ display: none;
         }
     }
 
-/* end fourth_screen section styles */
+/* end fourth screen section styles */
 
 /* footer styles */
 footer{
@@ -1000,14 +1000,14 @@ footer{
         margin-top: 1.5em;
     }
 }
-
 /* end basket styles */
 
 /* end styles */
 
+
 /* responsive*/
 
-    
+/* max-width:1280px */
 @media screen and (max-width:1280px){
     $main_font_size: 16px;
     $paragraph_font_size: 14px;
@@ -1143,10 +1143,14 @@ footer{
         }
     }
 }
+/* end max-width:1280px */
 
+
+/* max-width:970px */
 @media screen and (max-width:970px){
     $main_font_size: 14px;
     $paragraph_font_size: 12px;
+/* general styles */
     input[type=button]{
         letter-spacing: none;
     }
@@ -1230,14 +1234,78 @@ footer{
                 }
             }
     }
-    
-/* slider styles */
     .laptop{
-    display: none;
-    }
+        display: none;
+        }
     .mobile{
-    display: block;
+        display: block;
     }
+/* end general styles */
+
+
+/* footer styles */
+    footer{
+        margin: 5em -1em 0em -1em;
+        margin-top: 50px;
+        .main_information{
+            padding: 1.25em 1em 1.25em 1em;
+            .logo_footer{
+                .etnodim_logo_footer{
+                padding-bottom: 1.25em;
+                max-width: 132px;
+                }
+            }
+            .bottom_information_footer{
+                display: flex;
+                align-items: flex-start;
+                .drabyna, .manifest{
+                    padding-top:  20px;
+                }
+                .footer_menu{
+                grid-template-columns: 50% 50%;
+                width: 100%;
+                }
+            }
+            .social_networking{
+                .icon_social_networking{
+                    padding: 13px 13px 13px 0;
+                    flex-wrap: wrap;
+                }
+                .rights{
+                    display: none;
+                }
+            }
+            .arrow_up{
+                display: none;
+            }
+            .arrow_up-mobile{
+                position: absolute;
+                left: 50%;
+                top: -15px;
+            }
+            .contacts_footer-mobile{
+                display: flex;
+                flex-direction: column;
+                .header{
+                    text-decoration: underline;
+                }
+                span{
+                    padding-bottom: 10px;
+                }
+                .rights{
+                    padding-top: 20px;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    footer .main_information .bottom_information_footer .contacts_footer{
+        display: none;
+    }
+/* end footer styles */
+
+/* slider styles */
+
     .slider{
         &-general-mobile{
             height: 100vh;
@@ -1284,6 +1352,61 @@ footer{
     }
 /* end slider styles */
 
+/* fourth screen section styles */
+.fourth_screen{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .background{
+        margin: 0em -1em 0em -1em;
+        height: 50%;
+        .main_block{
+            height: 110%;
+            .text_part{
+                margin-top: 21px;
+                margin-left: 1em;
+                h2{
+                    padding-left: 2em;
+                    padding-right: 2em;
+                }
+                // .name_company{
+                //     text-transform: uppercase;
+                //     color: $additional_color;
+                // }
+                h2{
+                    
+                    padding-bottom: 0;
+                }
+                p{
+                    padding-bottom: 3.125em;
+                    line-height: 1.875em;
+                    width: 26.19em;
+                }
+            }
+            .image_part{
+                margin-left: -2em;
+                margin-right: -2em;
+                margin-top: 21px;
+                }
+            }
+        }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+            padding-bottom: 30px;
+            max-width: 500px;
+        }
+     }
+    }
+
+/* end fourth screen section styles */
+
+/* catalog styles */
     .catalog-main-block{
         display: block;
     }
@@ -1319,6 +1442,8 @@ footer{
             height: 420px;
         }
     }
+/* end catalog styles */
+
 
 /* catalog navigation styles */
     .catalog-navigation-mobile{
@@ -1473,11 +1598,13 @@ footer{
         }
     }
 /* end basket styles */
-
 }
+/* end max-width:970px */
 
 
+/* max-width:768px */
 @media screen and (max-width:768px){
+/* general styles */
     body{
         font-size: 14px;
     }
@@ -1493,7 +1620,7 @@ footer{
     }
     .mobile-header{
         margin-top: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .mobile-header-logo{
         width: 100px;
@@ -1504,6 +1631,25 @@ footer{
     .mobile-header-additional img{
         width: 25px;
     }
+    .banner-970{
+        display: none;
+    }
+/* end general styles */
+    .banner-768{
+        padding-top: 3.125em;
+        padding-bottom: 3.125em;
+        display: block;
+    }
+
+    .banner-text{
+        width: 355px;
+        .banner-image{
+                img{
+                    height: 119px;
+                    width: 94px;
+        }
+    }
+}
     .main-screen{
         .main-screen-block{
             margin-left: 1em;
@@ -1524,11 +1670,15 @@ footer{
             width: 31px;
             }
         }
-
-        .catalog-main-block .catalog-general .catalog-general-section .catalog-main-card{
+    .catalog-main-block .catalog-general .catalog-general-section .catalog-main-card{
             &-content{
                 height: 200px;
             }
-        }
+    }
+    .main-screen-block-information__header{
+        max-width: 360px
+    }
 
 }
+
+/* end max-width:768px */

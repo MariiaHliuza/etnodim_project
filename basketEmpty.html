@@ -61,6 +61,7 @@
     </header>
     <!-- end mobile-header -->
 
+    <!-- catalog navigation laptop -->
     <nav class="catalog-navigation laptop">
         <a href="index.html" class="catalog-navigation__text">Головна</a>
         <a href="" class="catalog-navigation__text">Жінкам</a>
@@ -68,7 +69,9 @@
         <a href="cardProduct.html" class="catalog-navigation__text">Вишиванка з рослинним орнаментом Lito</a>
         <a href="basket.html" class="catalog-navigation__text--current">Кошик</a>
     </nav>
+    <!-- end catalog navigation laptop -->
 
+    <!-- catalog navigation mobile -->
     <nav class="catalog-navigation-mobile mobile">
         <div class="catalog-navigation-arrow">
             <a href="catalog.html">
@@ -81,13 +84,17 @@
             <span class="catalog-navigation-name__span">Каталог</span>
         </div>
     </nav>
-        
+    <!-- end catalog navigation mobile -->
+
+    <!-- basket empty -->
     <main id="basketEmpty" class="basket-empty">
         <h5 class="basket-empty__heading">Упс:( Кошик порожній</h5>
         <input type="button" class="basket-empty__button" value="перейти до катологу" onclick="document.location='catalog.html'">
     </main>
-<!-- slider -->
-<section class="slider" id="newFounders">
+    <!-- end basket empty -->
+
+    <!-- slider -->
+    <section class="slider" id="newFounders">
     <div class="slider-general laptop">
         <div class="slider-general-top">
                 <h2 class="slider-general-top__header">нові надходження</h2>
@@ -215,15 +222,22 @@
             </div>
         </div>
     </div>
-   </section>
-   <!-- end block_slider -->
+    </section>
+    <!-- end block_slider -->
 
 <!-- footer -->
 <footer>
     <div class="main_information">
         <a href="#headerID">
-            <div class="arrow_up">
+            <div class="arrow_up laptop">
                 <svg width="32" height="58" viewBox="0 0 32 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5 57.5V1M16.5 1L31 15.5M16.5 1L1 15.5" stroke="#DA1F39"/>
+                </svg>
+            </div>
+        </a>
+        <a href="#headerID">
+            <div class="arrow_up-mobile mobile">
+                <svg width="32" height="30" viewBox="0 0 32 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.5 57.5V1M16.5 1L31 15.5M16.5 1L1 15.5" stroke="#DA1F39"/>
                 </svg>
             </div>
@@ -246,7 +260,7 @@
                     <a href="" class="manifest">Етнодім Маніфест</a>
                 </div>
             </div>
-            <div class="contacts_footer">
+            <div class="contacts_footer laptop">
                 <span class="header">Контакти</span>
                 <span>+38 097 888 92 92</span>
                 <span>Україна, м. Київ, вул. Верхній Вал 58/28</span>
@@ -287,8 +301,19 @@
                 <span class="rights">© «Етнодім» 2009-2021</span>
             </div>
         </div>
+        <div class="contacts_footer-mobile mobile">
+            <span class="header">Контакти</span>
+            <span>+38 097 888 92 92</span>
+            <span>Україна, м. Київ, вул. Верхній Вал 58/28</span>
+            <div class="grafic">
+                <span class="pn_pt">пн-пт 10:00-20:00</span>
+                <span class="pn_pt">сб-нд 11:00-19:00</span>
+            </div>
+            <span class="rights">© «Етнодім» 2009-2021</span>
+        </div>
     </div>
 </footer>
 <!-- end footer -->
+
 </body>
 </html>
